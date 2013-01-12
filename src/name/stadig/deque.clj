@@ -153,70 +153,70 @@
     (System/arraycopy array start a 0 (- end start))
     a))
 
-(defn array-pop [this]
-  (let [dst (object-array (dec (count this)))]
-    (System/arraycopy this 1 dst 0 (count dst))
+(defn array-pop [^objects this]
+  (let [dst (object-array (dec (alength this)))]
+    (System/arraycopy this 1 dst 0 (alength dst))
     dst))
 
-(defn array-push [this value]
-  (let [dst (object-array (inc (count this)))]
-    (System/arraycopy this 0 dst 1 (count this))
+(defn array-push [^objects this value]
+  (let [dst (object-array (inc (alength this)))]
+    (System/arraycopy this 0 dst 1 (alength this))
     (aset dst 0 value)
     dst))
 
 (defn array-inject [^objects this value]
-  (let [dst (Arrays/copyOf this (inc (count this)))]
-    (aset dst (count this) value)
+  (let [dst (Arrays/copyOf this (inc (alength this)))]
+    (aset dst (alength this) value)
     dst))
 
 (defn array-eject [^objects this]
-  (Arrays/copyOf this (dec (count this))))
+  (Arrays/copyOf this (dec (alength this))))
 
-(defn array-last ^objects [^objects this]
-  (aget this (dec (count this))))
+(defn array-last [^objects this]
+  (aget this (dec (alength this))))
 
 (defn two-buffer-case [^objects pi ^objects pi1 ^objects si1 ^objects si]
-  (let [[pi1 si1]
-        (if (zero? (count pi1))
+  (let [[pi1 ^objects si1]
+        (if (zero? (alength pi1))
           [(array-inject pi1 (aget si1 0))
            (array-pop si1)]
           [pi1 si1])
 
         [si1 pi1]
-        (if (zero? (count si1))
+        (if (zero? (alength si1))
           [(array-inject si1 (array-last pi1))
            (array-eject pi1)]
           [si1 pi1])
 
         [^objects pi1 ^objects pi]
-        (if (>= (count pi) 4)
-          [(array-push pi1 (array-slice pi (- (count pi) 2) (count pi)))
-           (array-slice pi 0 (- (count pi) 2))]
+        (if (>= (alength pi) 4)
+          [(array-push pi1 (array-slice pi (- (alength pi) 2) (alength pi)))
+           (array-slice pi 0 (- (alength pi) 2))]
           [pi1 pi])
 
-        [si1 si]
-        (if (>= (count si) 4)
+        [si1 ^objects si]
+        (if (>= (alength si) 4)
           [(array-inject si1 (array-slice si 0 2))
-           (array-slice si 2 (count si))]
+           (array-slice si 2 (alength si))]
           [si1 si])
 
         [pi pi1]
-        (if (<= (count pi) 1)
-          [(let [v (Arrays/copyOf pi (+ (count pi) 2))
+        (if (<= (alength pi) 1)
+          [(let [v (Arrays/copyOf pi (+ (alength pi) 2))
                  first ^objects (aget pi1 0)]
-             (aset v (count pi) (aget first 0))
-             (aset v (inc (count pi)) (aget first 1))
+             (aset v (alength pi) (aget first 0))
+             (aset v (inc (alength pi)) (aget first 1))
              v)
            (array-pop pi1)]
           [pi pi1])
 
         [si si1]
-        (if (<= (count si) 1)
-          [(let [v (object-array (+ (count si) 2))
-                 last (array-last si1)]
+        (if (<= (alength si) 1)
+          [(let [v (object-array (+ (alength si) 2))
+                 last ^objects (array-last si1)]
              (aset v 0 (aget last 0))
              (aset v 1 (aget last 1))
-             (System/arraycopy si 0 v 2 (count si))
+             (System/arraycopy si 0 v 2 (alength si))
              v)
            (array-eject si1)]
           [si si1])]
@@ -224,40 +224,40 @@
 
 (defn one-buffer-case [^objects pi ^objects pi1 ^objects si1 ^objects si]
   (let [[pi1 si1]
-        (if (= (count si1) 1)
+        (if (= (alength si1) 1)
           [(array-inject pi1 (aget si1 0))
            (array-pop si1)]
           [pi1 si1])
 
         [pi1 ^objects pi]
-        (if (>= (count pi) 4)
-          [(array-push pi1 (array-slice pi (- (count pi) 2) (count pi)))
-           (array-slice pi 0 (- (count pi) 2))]
+        (if (>= (alength pi) 4)
+          [(array-push pi1 (array-slice pi (- (alength pi) 2) (alength pi)))
+           (array-slice pi 0 (- (alength pi) 2))]
           [pi1 pi])
 
-        [^objects pi1 si]
-        (if (>= (count si) 4)
+        [^objects pi1 ^objects si]
+        (if (>= (alength si) 4)
           [(array-inject pi1 (array-slice si 0 2))
-           (array-slice si 2 (count si))]
+           (array-slice si 2 (alength si))]
           [pi1 si])
 
         [pi pi1]
-        (if (<= (count pi) 1)
-          [(let [v (Arrays/copyOf pi (+ (count pi) 2))
+        (if (<= (alength pi) 1)
+          [(let [v (Arrays/copyOf pi (+ (alength pi) 2))
                  first ^objects (aget pi1 0)]
-             (aset v (count pi) (aget first 0))
-             (aset v (inc (count pi)) (aget first 1))
+             (aset v (alength pi) (aget first 0))
+             (aset v (inc (alength pi)) (aget first 1))
              v)
            (array-pop pi1)]
           [pi pi1])
 
         [si pi1]
-        (if (<= (count si) 1)
-          [(let [v (object-array (+ (count si) 2))
-                 last (array-last pi1)]
+        (if (<= (alength si) 1)
+          [(let [v (object-array (+ (alength si) 2))
+                 last ^objects (array-last pi1)]
              (aset v 0 (aget last 0))
              (aset v 1 (aget last 1))
-             (System/arraycopy si 0 v 2 (count si))
+             (System/arraycopy si 0 v 2 (alength si))
              v)
            (array-eject pi1)]
           [si pi1])]
@@ -265,56 +265,56 @@
 
 (defn no-buffer-case [^objects pi ^objects pi1 ^objects si1 ^objects si]
   (let [[^objects pi pi1]
-        (if (= (count pi1) 1)
-          [(let [v (Arrays/copyOf pi (+ (count pi) 2))
+        (if (= (alength pi1) 1)
+          [(let [v (Arrays/copyOf pi (+ (alength pi) 2))
                  first ^objects (aget pi1 0)]
-             (aset v (count pi) (aget first 0))
-             (aset v (inc (count pi)) (aget first 1))
+             (aset v (alength pi) (aget first 0))
+             (aset v (inc (alength pi)) (aget first 1))
              v)
            (array-pop pi1)]
           [pi pi1])
 
         [pi si1]
-        (if (= (count si1) 1)
-          [(let [v (Arrays/copyOf pi (+ (count pi) 2))
+        (if (= (alength si1) 1)
+          [(let [v (Arrays/copyOf pi (+ (alength pi) 2))
                  first ^objects (aget si1 0)]
-             (aset v (count pi) (aget first 0))
-             (aset v (inc (count pi)) (aget first 1))
+             (aset v (alength pi) (aget first 0))
+             (aset v (inc (alength pi)) (aget first 1))
              v)
            (array-pop si1)]
           [pi si1])
 
         [pi si]
-        (if (= (count si) 1)
+        (if (= (alength si) 1)
           [(array-inject pi (aget si 0))
            (array-pop si)]
           [pi si])]
     [pi pi1 si1 si]))
 
-(defn regularize [prefix child substack suffix]
+(defn regularize [^objects prefix child substack ^objects suffix]
   (let [pi prefix
         pi1 (proto/prefix child)
         si1 (proto/suffix child)
         si suffix]
-    (assert (or (and (pos? (count pi1))
-                     (pos? (count si1)))
+    (assert (or (and (pos? (alength pi1))
+                     (pos? (alength si1)))
                 (empty? (proto/child child)))
             "level i + 1 may not be red")
-    (let [[pi pi1 si1 si]
+    (let [[pi ^objects pi1 ^objects si1 si]
           (cond
-           (>= (+ (count pi1) (count si1)) 2)
+           (>= (+ (alength pi1) (alength si1)) 2)
            (two-buffer-case pi pi1 si1 si)
-           (and (<= (+ (count pi1) (count si1)) 1)
-                (or (>= (count pi) 2)
-                    (>= (count si) 2)))
+           (and (<= (+ (alength pi1) (alength si1)) 1)
+                (or (>= (alength pi) 2)
+                    (>= (alength si) 2)))
            (one-buffer-case pi pi1 si1 si)
-           (and (<= (+ (count pi1) (count si1)) 1)
-                (<= (count pi) 1)
-                (<= (count si) 1))
+           (and (<= (+ (alength pi1) (alength si1)) 1)
+                (<= (alength pi) 1)
+                (<= (alength si) 1))
            (no-buffer-case pi pi1 si1 si)
            :else
            (throw (Exception. "null case")))]
-      (if (or (pos? (count pi1)) (pos? (count si1)))
+      (if (or (pos? (alength pi1)) (pos? (alength si1)))
         (let [child-child (proto/child child)
               child-substack (proto/substack child)
               ch-yellow? (yellow? (and (empty? substack)
