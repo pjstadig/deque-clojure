@@ -56,11 +56,11 @@
 (defn xor [a b]
   (or (and a (not b)) (and b (not a))))
 
-(defn color [bottom? prefix suffix]
+(defn color [bottom? ^objects prefix ^objects suffix]
   (assert (or (not bottom?) (not (empty? prefix)) (not (empty? suffix))))
   (let [prefix-color (array-color prefix)
         suffix-color (array-color suffix)]
-    (if (and bottom? (xor (empty? prefix) (empty? suffix)))
+    (if (and bottom? (xor (zero? (alength prefix)) (zero? (alength suffix))))
       (if (pos? (count prefix))
         prefix-color
         suffix-color)
@@ -390,12 +390,15 @@
           (assert (regular? deque))
           deque)))))
 
-(defn set-prefix [deque prefix]
+(defn set-prefix [deque ^objects prefix]
   (let [child (proto/child deque)
         substack (proto/substack deque)
         suffix (proto/suffix deque)]
     (cond
-     (and (empty? prefix) (empty? child) (empty? substack) (empty? suffix))
+     (and (zero? (alength prefix))
+          (empty? child)
+          (empty? substack)
+          (zero? (alength suffix)))
      empty-deque
      (and (not (empty? child)) (red? child))
      (do (assert (empty? substack)
@@ -421,15 +424,15 @@
      :else
      (persistent-deque prefix child substack suffix))))
 
-(defn set-suffix [deque suffix]
+(defn set-suffix [deque ^objects suffix]
   (let [prefix (proto/prefix deque)
         child (proto/child deque)
         substack (proto/substack deque)]
     (cond
-     (and (zero? (count prefix))
+     (and (zero? (alength prefix))
           (empty? child)
           (empty? substack)
-          (zero? (count suffix)))
+          (zero? (alength suffix)))
      empty-deque
      (and (not (empty? child)) (red? child))
      (do (assert (empty? substack)
@@ -513,7 +516,7 @@
               (nth suffix i)
               not-found)))))))
 
-(deftype PersistentDeque [prefix child substack suffix]
+(deftype PersistentDeque [^objects prefix child substack ^objects suffix]
   Object
   IMeta
   (meta [this] {})
@@ -536,7 +539,7 @@
   (equiv [this other])
   ISeq
   (first [this]
-    (first (if (and (empty? prefix)
+    (first (if (and (zero? (alength prefix))
                     (empty? child)
                     (empty? substack))
              suffix
@@ -551,7 +554,7 @@
   IPersistentStack
   (peek [this] (first this))
   (pop [this]
-    (if (and (empty? prefix)
+    (if (and (zero? (alength prefix))
              (empty? child)
              (empty? substack))
       (set-suffix this (array-pop suffix))
@@ -567,19 +570,19 @@
   (suffix [this] suffix)
   proto/IDeque
   (last [this]
-    (array-last (if (and (empty? suffix)
+    (array-last (if (and (zero? (alength suffix))
                          (empty? child)
                          (empty? substack))
                   prefix
                   suffix)))
   (inject [this v]
-    (if (and (empty? suffix)
+    (if (and (zero? (alength suffix))
              (empty? child)
              (empty? substack))
       (set-prefix this (array-inject prefix v))
       (set-suffix this (array-inject suffix v))))
   (eject [this]
-    (if (and (empty? suffix)
+    (if (and (zero? (alength suffix))
              (empty? child)
              (empty? substack))
       (set-prefix this (array-eject prefix))
@@ -588,11 +591,11 @@
 (defn persistent-deque
   ([prefix suffix]
      (persistent-deque prefix empty-deque empty-deque suffix))
-  ([prefix child substack suffix]
-     (when-not (and (empty? prefix)
+  ([^objects prefix child substack ^objects suffix]
+     (when-not (and (zero? (alength prefix))
                     (empty? child)
                     (empty? substack)
-                    (empty? suffix))
+                    (zero? (alength suffix)))
        (assert (or (not (empty? prefix)) (not (empty? suffix))))
        (assert (<= (count prefix) 5))
        (assert (<= (count suffix) 5))
