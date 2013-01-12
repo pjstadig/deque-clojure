@@ -18,6 +18,8 @@
            (java.util Arrays List))
   (:gen-class))
 
+(set! *warn-on-reflection* true)
+
 (defmacro assert
   ([value]
      #_`(clj/assert ~value))
@@ -162,18 +164,18 @@
     (aset dst 0 value)
     dst))
 
-(defn array-inject [this value]
+(defn array-inject [^objects this value]
   (let [dst (Arrays/copyOf this (inc (count this)))]
     (aset dst (count this) value)
     dst))
 
-(defn array-eject [this]
+(defn array-eject [^objects this]
   (Arrays/copyOf this (dec (count this))))
 
-(defn array-last [this]
+(defn array-last ^objects [^objects this]
   (aget this (dec (count this))))
 
-(defn two-buffer-case [pi pi1 si1 si]
+(defn two-buffer-case [^objects pi ^objects pi1 ^objects si1 ^objects si]
   (let [[pi1 si1]
         (if (zero? (count pi1))
           [(array-inject pi1 (aget si1 0))
@@ -186,7 +188,7 @@
            (array-eject pi1)]
           [si1 pi1])
 
-        [pi1 pi]
+        [^objects pi1 ^objects pi]
         (if (>= (count pi) 4)
           [(array-push pi1 (array-slice pi (- (count pi) 2) (count pi)))
            (array-slice pi 0 (- (count pi) 2))]
@@ -201,7 +203,7 @@
         [pi pi1]
         (if (<= (count pi) 1)
           [(let [v (Arrays/copyOf pi (+ (count pi) 2))
-                 first (aget pi1 0)]
+                 first ^objects (aget pi1 0)]
              (aset v (count pi) (aget first 0))
              (aset v (inc (count pi)) (aget first 1))
              v)
@@ -220,20 +222,20 @@
           [si si1])]
     [pi pi1 si1 si]))
 
-(defn one-buffer-case [pi pi1 si1 si]
+(defn one-buffer-case [^objects pi ^objects pi1 ^objects si1 ^objects si]
   (let [[pi1 si1]
         (if (= (count si1) 1)
           [(array-inject pi1 (aget si1 0))
            (array-pop si1)]
           [pi1 si1])
 
-        [pi1 pi]
+        [pi1 ^objects pi]
         (if (>= (count pi) 4)
           [(array-push pi1 (array-slice pi (- (count pi) 2) (count pi)))
            (array-slice pi 0 (- (count pi) 2))]
           [pi1 pi])
 
-        [pi1 si]
+        [^objects pi1 si]
         (if (>= (count si) 4)
           [(array-inject pi1 (array-slice si 0 2))
            (array-slice si 2 (count si))]
@@ -242,7 +244,7 @@
         [pi pi1]
         (if (<= (count pi) 1)
           [(let [v (Arrays/copyOf pi (+ (count pi) 2))
-                 first (aget pi1 0)]
+                 first ^objects (aget pi1 0)]
              (aset v (count pi) (aget first 0))
              (aset v (inc (count pi)) (aget first 1))
              v)
@@ -261,11 +263,11 @@
           [si pi1])]
     [pi pi1 si1 si]))
 
-(defn no-buffer-case [pi pi1 si1 si]
-  (let [[pi pi1]
+(defn no-buffer-case [^objects pi ^objects pi1 ^objects si1 ^objects si]
+  (let [[^objects pi pi1]
         (if (= (count pi1) 1)
           [(let [v (Arrays/copyOf pi (+ (count pi) 2))
-                 first (aget pi1 0)]
+                 first ^objects (aget pi1 0)]
              (aset v (count pi) (aget first 0))
              (aset v (inc (count pi)) (aget first 1))
              v)
@@ -275,7 +277,7 @@
         [pi si1]
         (if (= (count si1) 1)
           [(let [v (Arrays/copyOf pi (+ (count pi) 2))
-                 first (aget si1 0)]
+                 first ^objects (aget si1 0)]
              (aset v (count pi) (aget first 0))
              (aset v (inc (count pi)) (aget first 1))
              v)
