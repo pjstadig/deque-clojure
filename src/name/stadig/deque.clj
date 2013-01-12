@@ -29,8 +29,8 @@
 (declare persistent-deque)
 (declare empty-deque)
 
-(defn array-color [array]
-  (case (count array)
+(defn array-color [^objects array]
+  (case (alength array)
     0 :red
     1 :yellow
     4 :yellow
@@ -61,7 +61,7 @@
   (let [prefix-color (array-color prefix)
         suffix-color (array-color suffix)]
     (if (and bottom? (xor (zero? (alength prefix)) (zero? (alength suffix))))
-      (if (pos? (count prefix))
+      (if (pos? (alength prefix))
         prefix-color
         suffix-color)
       (if (neg? (compare-color prefix-color suffix-color))
@@ -470,7 +470,7 @@
           c (if (not (empty? child))
               (deque-count child c)
               c)]
-      (+ (* 2 c) (count prefix) (count suffix)))))
+      (+ (* 2 c) (alength prefix) (alength suffix)))))
 
 (defn deque-nth [deque index more not-found]
   (let [prefix (proto/prefix deque)
@@ -478,9 +478,9 @@
         substack (proto/substack deque)
         suffix (proto/suffix deque)
         i index]
-    (if (< i (count prefix))
+    (if (< i (alength prefix))
       (nth prefix i)
-      (let [i (- i (count prefix))]
+      (let [i (- i (alength prefix))]
         (if (not (empty? child))
           (let [substack (if (empty? substack)
                            more
@@ -491,11 +491,11 @@
                 (if t
                   t
                   (let [i (- i child-count)]
-                    (if (< i (count suffix))
+                    (if (< i (alength suffix))
                       (nth suffix i)
                       not-found))))
               (let [i (- i child-count)]
-                (if (< i (count suffix))
+                (if (< i (alength suffix))
                   (nth suffix i)
                   not-found))))
           (if (not (empty? more))
@@ -505,14 +505,14 @@
                   (if t
                     t
                     (let [i (- i child-count)]
-                      (if (< i (count suffix))
+                      (if (< i (alength suffix))
                         (nth suffix i)
                         not-found))))
                 (let [i (- i child-count)]
-                  (if (< i (count suffix))
+                  (if (< i (alength suffix))
                     (nth suffix i)
                     not-found))))
-            (if (< i (count suffix))
+            (if (< i (alength suffix))
               (nth suffix i)
               not-found)))))))
 
@@ -530,7 +530,7 @@
       0
       (deque-count this 0)))
   (cons [this v]
-    (if (and (zero? (count prefix))
+    (if (and (zero? (alength prefix))
              (empty? child)
              (empty? substack))
       (set-suffix this (array-push suffix v))
