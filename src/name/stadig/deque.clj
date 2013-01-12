@@ -70,7 +70,8 @@
 
 (defn green?
   ([deque]
-     (green? (and (empty? (proto/child deque)) (empty? (proto/substack deque)))
+     (green? (and (identical? empty-deque (proto/child deque))
+                  (identical? empty-deque (proto/substack deque)))
              (proto/prefix deque)
              (proto/suffix deque)))
   ([bottom? prefix suffix]
@@ -79,8 +80,8 @@
 (defn yellow?
   ([deque bottom?]
      (yellow? (and bottom?
-                   (empty? (proto/child deque))
-                   (empty? (proto/substack deque)))
+                   (identical? empty-deque (proto/child deque))
+                   (identical? empty-deque (proto/substack deque)))
               (proto/prefix deque)
               (proto/suffix deque)))
   ([bottom? prefix suffix]
@@ -88,7 +89,8 @@
 
 (defn red?
   ([deque]
-     (red? (and (empty? (proto/child deque)) (empty? (proto/substack deque)))
+     (red? (and (identical? empty-deque (proto/child deque))
+                (identical? empty-deque (proto/substack deque)))
            (proto/prefix deque)
            (proto/suffix deque)))
   ([bottom? prefix suffix]
@@ -97,52 +99,55 @@
 (defn child-yellow? [deque bottom?]
   (let [child (proto/child deque)]
     (yellow? (and bottom?
-                  (empty? (proto/substack deque))
-                  (empty? (proto/child child))
-                  (empty? (proto/substack child)))
+                  (identical? empty-deque (proto/substack deque))
+                  (identical? empty-deque (proto/child child))
+                  (identical? empty-deque (proto/substack child)))
              (proto/prefix child)
              (proto/suffix child))))
 
 (defn semiregular? [deque bottom?]
-  (if (empty? deque)
+  (if (identical? empty-deque deque)
     true
-    (do (assert (or (empty? (proto/substack deque))
-                    (and (not (empty? (proto/child deque)))
+    (do (assert (or (identical? empty-deque (proto/substack deque))
+                    (and (not (identical? empty-deque (proto/child deque)))
                          (child-yellow? deque false)))
                 (str "if a deque's substack is not empty, then its child "
                      "must be yellow"))
-        (assert (or (empty? (proto/substack deque))
+        (assert (or (identical? empty-deque (proto/substack deque))
                     (green? (proto/substack deque))
                     (red? (proto/substack deque)))
                 (str "if a deque's substack is not empty, then its substack "
                      "must be red or green"))
         (assert (or (not (red? deque))
-                    (empty? (proto/child deque))
+                    (identical? empty-deque (proto/child deque))
                     (green? (proto/child deque))
                     (and (child-yellow? deque bottom?)
-                         (or (empty? (proto/substack deque))
+                         (or (identical? empty-deque (proto/substack deque))
                              (green? (proto/substack deque)))))
                 (str "if a deque is red, then its child/substack must be "
                      "empty or green"))
-        (assert (or (empty? (proto/child deque))
+        (assert (or (identical? empty-deque (proto/child deque))
                     (not (child-yellow? deque bottom?))
-                    (empty? (proto/child (proto/child deque)))
+                    (identical? empty-deque (proto/child (proto/child deque)))
                     (child-yellow? (proto/child deque) bottom?))
                 "if a deque is yellow, then its child must be yellow")
         (assert (semiregular? (proto/child deque)
-                              (and bottom? (empty? (proto/substack deque)))))
+                              (and bottom?
+                                   (identical? empty-deque
+                                               (proto/substack deque)))))
         (assert (semiregular? (proto/substack deque) true))
         true)))
 
 (defn regular? [deque]
-  (if (empty? deque)
+  (if (identical? empty-deque deque)
     true
     (do (assert (or (green? deque)
                     (and (yellow? deque true)
-                         (or (empty? (proto/child deque))
+                         (or (identical? empty-deque (proto/child deque))
                              (green? (proto/child deque))
                              (and (child-yellow? deque true)
-                                  (or (empty? (proto/substack deque))
+                                  (or (identical? empty-deque
+                                                  (proto/substack deque))
                                       (green? (proto/substack deque)))))))
                 "the topmost non-yellow deque must be green")
         (assert (semiregular? deque true))
@@ -298,7 +303,7 @@
         si suffix]
     (assert (or (and (pos? (alength pi1))
                      (pos? (alength si1)))
-                (empty? (proto/child child)))
+                (identical? empty-deque (proto/child child)))
             "level i + 1 may not be red")
     (let [[pi ^objects pi1 ^objects si1 si]
           (cond
@@ -317,30 +322,30 @@
       (if (or (pos? (alength pi1)) (pos? (alength si1)))
         (let [child-child (proto/child child)
               child-substack (proto/substack child)
-              ch-yellow? (yellow? (and (empty? substack)
-                                       (empty? child-child)
-                                       (empty? child-substack))
+              ch-yellow? (yellow? (and (identical? empty-deque substack)
+                                       (identical? empty-deque child-child)
+                                       (identical? empty-deque child-substack))
                                   pi1 si1)]
-          (cond (and (empty? substack) ch-yellow?)
-                (cond (and (empty? child-substack)
-                           (not (empty? child-child))
+          (cond (and (identical? empty-deque substack) ch-yellow?)
+                (cond (and (identical? empty-deque child-substack)
+                           (not (identical? empty-deque child-child))
                            (not (child-yellow? child true)))
                       (let [new-child (persistent-deque pi1 si1)]
                         (assert (yellow? new-child
-                                         (empty? substack)))
+                                         (identical? empty-deque substack)))
                         (let [deque (persistent-deque pi
                                                       new-child
                                                       child-child
                                                       si)]
                           (assert (regular? deque))
                           deque))
-                      (not (empty? child-substack))
+                      (not (identical? empty-deque child-substack))
                       (let [new-child (persistent-deque pi1
                                                         child-child
                                                         empty-deque
                                                         si1)]
                         (assert (yellow? new-child
-                                         (empty? substack)))
+                                         (identical? empty-deque substack)))
                         (let [deque (persistent-deque pi
                                                       new-child
                                                       child-substack
@@ -358,11 +363,11 @@
                                    si)]
                         (assert (regular? deque))
                         deque))
-                (and (not (empty? substack)) (not ch-yellow?))
-                (do (assert (empty? child-substack))
+                (and (not (identical? empty-deque substack)) (not ch-yellow?))
+                (do (assert (identical? empty-deque child-substack))
                     (let [deque (persistent-deque
                                  pi
-                                 (if (empty? child-child)
+                                 (if (identical? empty-deque child-child)
                                    (persistent-deque pi1
                                                      substack
                                                      empty-deque
@@ -396,12 +401,12 @@
         suffix (proto/suffix deque)]
     (cond
      (and (zero? (alength prefix))
-          (empty? child)
-          (empty? substack)
+          (identical? empty-deque child)
+          (identical? empty-deque substack)
           (zero? (alength suffix)))
      empty-deque
-     (and (not (empty? child)) (red? child))
-     (do (assert (empty? substack)
+     (and (not (identical? empty-deque child)) (red? child))
+     (do (assert (identical? empty-deque substack)
                  (str "if a node's child is not yellow, then its substack "
                       "must be empty"))
          (persistent-deque prefix
@@ -411,7 +416,7 @@
                                        (proto/suffix child))
                            substack
                            suffix))
-     (and (not (empty? substack)) (red? substack))
+     (and (not (identical? empty-deque substack)) (red? substack))
      (persistent-deque prefix
                        child
                        (regularize (proto/prefix substack)
@@ -419,7 +424,10 @@
                                    (proto/substack substack)
                                    (proto/suffix substack))
                        suffix)
-     (red? (and (empty? child) (empty? substack)) prefix suffix)
+     (red? (and (identical? empty-deque child)
+                (identical? empty-deque substack))
+           prefix
+           suffix)
      (regularize prefix child substack suffix)
      :else
      (persistent-deque prefix child substack suffix))))
@@ -430,12 +438,12 @@
         substack (proto/substack deque)]
     (cond
      (and (zero? (alength prefix))
-          (empty? child)
-          (empty? substack)
+          (identical? empty-deque child)
+          (identical? empty-deque substack)
           (zero? (alength suffix)))
      empty-deque
-     (and (not (empty? child)) (red? child))
-     (do (assert (empty? substack)
+     (and (not (identical? empty-deque child)) (red? child))
+     (do (assert (identical? empty-deque substack)
                  (str "if a node's child is not yellow, then its substack "
                       "must be empty"))
          (persistent-deque prefix
@@ -445,7 +453,7 @@
                                        (proto/suffix child))
                            substack
                            suffix))
-     (and (not (empty? substack)) (red? substack))
+     (and (not (identical? empty-deque substack)) (red? substack))
      (persistent-deque prefix
                        child
                        (regularize (proto/prefix substack)
@@ -453,7 +461,10 @@
                                    (proto/substack substack)
                                    (proto/suffix substack))
                        suffix)
-     (red? (and (empty? child) (empty? substack)) prefix suffix)
+     (red? (and (identical? empty-deque child)
+                (identical? empty-deque substack))
+           prefix
+           suffix)
      (regularize prefix child substack suffix)
      :else
      (persistent-deque prefix child substack suffix))))
@@ -464,10 +475,10 @@
         substack (proto/substack deque)
         suffix (proto/suffix deque)
         c substack-count]
-    (let [c (if (not (empty? substack))
+    (let [c (if (not (identical? empty-deque substack))
               (deque-count substack c)
               c)
-          c (if (not (empty? child))
+          c (if (not (identical? empty-deque child))
               (deque-count child c)
               c)]
       (+ (* 2 c) (alength prefix) (alength suffix)))))
@@ -481,8 +492,8 @@
     (if (< i (alength prefix))
       (nth prefix i)
       (let [i (- i (alength prefix))]
-        (if (not (empty? child))
-          (let [substack (if (empty? substack)
+        (if (not (identical? empty-deque child))
+          (let [substack (if (identical? empty-deque substack)
                            more
                            substack)
                 child-count (* 2 (deque-count child (count substack)))]
@@ -498,7 +509,7 @@
                 (if (< i (alength suffix))
                   (nth suffix i)
                   not-found))))
-          (if (not (empty? more))
+          (if (not (identical? empty-deque more))
             (let [child-count (* 2 (count more))]
               (if (< i child-count)
                 (let [t (nth (nth more (quot i 2)) (mod i 2))]
@@ -526,13 +537,13 @@
   (seq [this] this)
   IPersistentCollection
   (count [this]
-    (if (empty? this)
+    (if (identical? empty-deque this)
       0
       (deque-count this 0)))
   (cons [this v]
     (if (and (zero? (alength prefix))
-             (empty? child)
-             (empty? substack))
+             (identical? empty-deque child)
+             (identical? empty-deque substack))
       (set-suffix this (array-push suffix v))
       (set-prefix this (array-push prefix v))))
   (empty [this] empty-deque)
@@ -540,8 +551,8 @@
   ISeq
   (first [this]
     (first (if (and (zero? (alength prefix))
-                    (empty? child)
-                    (empty? substack))
+                    (identical? empty-deque child)
+                    (identical? empty-deque substack))
              suffix
              prefix)))
   (next [this] (seq (pop this)))
@@ -555,8 +566,8 @@
   (peek [this] (first this))
   (pop [this]
     (if (and (zero? (alength prefix))
-             (empty? child)
-             (empty? substack))
+             (identical? empty-deque child)
+             (identical? empty-deque substack))
       (set-suffix this (array-pop suffix))
       (set-prefix this (array-pop prefix))))
   IPersistentList
@@ -571,20 +582,20 @@
   proto/IDeque
   (last [this]
     (array-last (if (and (zero? (alength suffix))
-                         (empty? child)
-                         (empty? substack))
+                         (identical? empty-deque child)
+                         (identical? empty-deque substack))
                   prefix
                   suffix)))
   (inject [this v]
     (if (and (zero? (alength suffix))
-             (empty? child)
-             (empty? substack))
+             (identical? empty-deque child)
+             (identical? empty-deque substack))
       (set-prefix this (array-inject prefix v))
       (set-suffix this (array-inject suffix v))))
   (eject [this]
     (if (and (zero? (alength suffix))
-             (empty? child)
-             (empty? substack))
+             (identical? empty-deque child)
+             (identical? empty-deque substack))
       (set-prefix this (array-eject prefix))
       (set-suffix this (array-eject suffix)))))
 
@@ -593,13 +604,14 @@
      (persistent-deque prefix empty-deque empty-deque suffix))
   ([^objects prefix child substack ^objects suffix]
      (when-not (and (zero? (alength prefix))
-                    (empty? child)
-                    (empty? substack)
+                    (identical? empty-deque child)
+                    (identical? empty-deque substack)
                     (zero? (alength suffix)))
        (assert (or (not (empty? prefix)) (not (empty? suffix))))
        (assert (<= (count prefix) 5))
        (assert (<= (count suffix) 5))
-       (assert (or (empty? substack) (not (empty? child)))
+       (assert (or (identical? empty-deque substack)
+                   (not (identical? empty-deque child)))
                (str "if a deque's substack is not empty, then its child must "
                     "not be empty")))
      (PersistentDeque. prefix child substack suffix)))
