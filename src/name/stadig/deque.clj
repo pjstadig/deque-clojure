@@ -153,7 +153,7 @@
         (assert (semiregular? deque true))
         true)))
 
-(defn array-slice [array start end]
+(defn array-slice [array ^long start ^long end]
   (let [a (object-array (- end start))]
     (System/arraycopy array start a 0 (- end start))
     a))
