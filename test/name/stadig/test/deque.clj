@@ -61,6 +61,3 @@
         (when (>= j 0)
           (is (= j (first deque)))
           (recur (dec j) (pop deque)))))))
-
-(defn -main [& args]
-  (into empty-deque (range)))

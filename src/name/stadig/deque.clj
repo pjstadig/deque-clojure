@@ -656,3 +656,6 @@
   (eject [this] nil))
 
 (def empty-deque (EmptyDeque.))
+
+(defn -main [& args]
+  (into empty-deque (range)))

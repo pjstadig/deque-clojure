@@ -1,4 +1,4 @@
-JAVA PROFILE 1.0.1, created Sat Jan 12 16:53:47 2013
+JAVA PROFILE 1.0.1, created Sun Jan 13 05:31:18 2013
 
 Copyright (c) 2003, 2005, Oracle and/or its affiliates. All rights reserved.
 
@@ -93,16 +93,7 @@ THREAD START (obj=5000016b, id = 200001, name="main", group="main")
 THREAD END (id = 200001)
 THREAD START (obj=5000016b, id = 200004, name="DestroyJavaVM", group="main")
 THREAD END (id = 200004)
-TRACE 300453:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:42)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
-	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
-	name.stadig.deque$set_prefix.invoke(deque.clj:408)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-TRACE 300055:
+TRACE 300041:
 	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
 	java.lang.ClassLoader.defineClass(ClassLoader.java:787)
 	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
@@ -111,88 +102,187 @@ TRACE 300055:
 	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
 	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
 	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-TRACE 300355:
-	java.lang.Throwable.fillInStackTrace(Throwable.java:Unknown line)
-	java.lang.Throwable.fillInStackTrace(Throwable.java:782)
-	java.lang.Throwable.<init>(Throwable.java:287)
-	java.lang.Exception.<init>(Exception.java:84)
-	java.lang.ReflectiveOperationException.<init>(ReflectiveOperationException.java:75)
-	java.lang.ClassNotFoundException.<init>(ClassNotFoundException.java:82)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:366)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-TRACE 300101:
-	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
-	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
-	java.io.File.exists(File.java:772)
-	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1057)
-	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-TRACE 300369:
-	java.lang.Throwable.fillInStackTrace(Throwable.java:Unknown line)
-	java.lang.Throwable.fillInStackTrace(Throwable.java:782)
-	java.lang.Throwable.<init>(Throwable.java:310)
-	java.lang.Exception.<init>(Exception.java:102)
-	java.security.PrivilegedActionException.<init>(PrivilegedActionException.java:66)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-TRACE 300463:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
+TRACE 300315:
+	clojure.lang.Util.hash(Util.java:116)
+	name.stadig.deque$compare_color.invoke(deque.clj:42)
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
+	name.stadig.deque$set_prefix.invoke(deque.clj:408)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+TRACE 300324:
+	name.stadig.deque$array_slice.invoke(deque.clj:157)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300313:
+	name.stadig.deque$array_slice.invoke(deque.clj:157)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300290:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300291:
-	java.lang.Throwable.fillInStackTrace(Throwable.java:Unknown line)
-	java.lang.Throwable.fillInStackTrace(Throwable.java:782)
-	java.lang.Throwable.<init>(Throwable.java:310)
-	java.lang.Exception.<init>(Exception.java:102)
-	java.security.PrivilegedActionException.<init>(PrivilegedActionException.java:66)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-TRACE 300448:
+TRACE 300320:
+	name.stadig.deque$array_slice.invoke(deque.clj:157)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300335:
 	clojure.lang.Util.hash(Util.java:116)
 	name.stadig.deque$compare_color.invoke(deque.clj:42)
 	name.stadig.deque$color.invoke(deque.clj:67)
 	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
 	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
 	name.stadig.deque$set_prefix.invoke(deque.clj:419)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-TRACE 300459:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300339:
+	clojure.core$range$fn__4149.invoke(core.clj:2618)
+	clojure.lang.LazySeq.sval(LazySeq.java:42)
+	clojure.lang.LazySeq.seq(LazySeq.java:60)
+	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
+	clojure.core$chunk_next.invoke(core.clj:644)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
 	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
 	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300365:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300384:
-	java.lang.Object.clone(Object.java:Unknown line)
-	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:993)
-	clojure.lang.PersistentHashMap.access$200(PersistentHashMap.java:29)
-	clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc(PersistentHashMap.java:534)
-	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:343)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:29)
-	clojure.lang.Var.pushThreadBindings(Var.java:356)
-TRACE 300100:
+TRACE 300288:
+	clojure.lang.RT.object_array(RT.java:1526)
+	name.stadig.deque$array_push.invoke(deque.clj:167)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300296:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300153:
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
+	clojure.lang.RT.<clinit>(RT.java:318)
+	clojure.lang.Namespace.<init>(Namespace.java:34)
+TRACE 300316:
+	clojure.lang.Util.hash(Util.java:116)
+	name.stadig.deque$compare_color.invoke(deque.clj:42)
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
+	name.stadig.deque$regularize.invoke(deque.clj:327)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+TRACE 300059:
+	java.lang.String.toCharArray(String.java:2753)
+	java.util.zip.ZipCoder.getBytes(ZipCoder.java:78)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:302)
+	java.util.jar.JarFile.getEntry(JarFile.java:225)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:208)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:817)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+TRACE 300283:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:193)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300317:
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300318:
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+TRACE 300319:
+	name.stadig.deque$array_slice.invoke(deque.clj:157)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300325:
+	clojure.lang.Util.hash(Util.java:116)
+	name.stadig.deque$compare_color.invoke(deque.clj:42)
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
+	name.stadig.deque$set_prefix.invoke(deque.clj:428)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+TRACE 300337:
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300351:
+	clojure.core$chunk_buffer.invoke(core.clj:628)
+	clojure.core$range$fn__4149.invoke(core.clj:2611)
+	clojure.lang.LazySeq.sval(LazySeq.java:42)
+	clojure.lang.LazySeq.seq(LazySeq.java:60)
+	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
+	clojure.core$chunk_next.invoke(core.clj:644)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+TRACE 300356:
+	name.stadig.deque$array_slice.invoke(deque.clj:157)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300171:
 	java.util.zip.Inflater.inflateBytes(Inflater.java:Unknown line)
 	java.util.zip.Inflater.inflate(Inflater.java:256)
 	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:152)
@@ -201,427 +291,216 @@ TRACE 300100:
 	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
 	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
 	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-TRACE 300151:
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.lang.RT.doInit(RT.java:436)
-	clojure.lang.RT.<clinit>(RT.java:318)
-	clojure.main.<clinit>(main.java:20)
-TRACE 300367:
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300386:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-TRACE 300394:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300450:
+TRACE 300289:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	name.stadig.deque$array_push.invoke(deque.clj:168)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300302:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:197)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300303:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:205)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300323:
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
+	name.stadig.deque$set_prefix.invoke(deque.clj:419)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300326:
 	clojure.lang.Util.hash(Util.java:116)
 	name.stadig.deque$compare_color.invoke(deque.clj:42)
 	name.stadig.deque$color.invoke(deque.clj:67)
 	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
 	name.stadig.deque$regularize.invoke(deque.clj:327)
 	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-TRACE 300456:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300476:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300356:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-TRACE 300363:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300396:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-TRACE 300460:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300462:
+TRACE 300329:
 	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300477:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300479:
-	name.stadig.deque$regularize.invoke(deque.clj:311)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300481:
-	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
-	name.stadig.deque$set_prefix.invoke(deque.clj:408)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300370:
-	java.util.zip.ZipFile.getEntry(ZipFile.java:Unknown line)
-	java.util.zip.ZipFile.getEntry(ZipFile.java:302)
-	java.util.jar.JarFile.getEntry(JarFile.java:225)
-	java.util.jar.JarFile.getJarEntry(JarFile.java:208)
-	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:817)
-	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-TRACE 300375:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-TRACE 300377:
-	java.net.URLClassLoader$1.run(URLClassLoader.java:366)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300378:
-	java.net.URLClassLoader$1.run(URLClassLoader.java:366)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300380:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-TRACE 300391:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300399:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-TRACE 300400:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-TRACE 300442:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:193)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300449:
-	name.stadig.deque$regularize.invoke(deque.clj:301)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300457:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:193)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300461:
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-TRACE 300469:
+TRACE 300330:
 	clojure.lang.Util.hash(Util.java:116)
 	name.stadig.deque$compare_color.invoke(deque.clj:42)
 	name.stadig.deque$color.invoke(deque.clj:67)
 	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
-	name.stadig.deque$regularize.invoke(deque.clj:327)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-TRACE 300472:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300473:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
+	name.stadig.deque$regularize.invoke(deque.clj:332)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300482:
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-TRACE 300484:
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+TRACE 300347:
 	name.stadig.deque$color.invoke(deque.clj:67)
 	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
 	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
 	name.stadig.deque$set_prefix.invoke(deque.clj:408)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
-TRACE 300485:
-	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
-	name.stadig.deque$regularize.invoke(deque.clj:332)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+TRACE 300348:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300488:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:90)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300490:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:42)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
-	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
+TRACE 300352:
 	name.stadig.deque$regularize.invoke(deque.clj:332)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-TRACE 300497:
-	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
-	clojure.lang.RT.vector(RT.java:1457)
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-TRACE 300500:
-	clojure.lang.RT.count(RT.java:518)
-	clojure.core$chunk_cons.invoke(core.clj:647)
-	clojure.core$range$fn__4149.invoke(core.clj:2621)
-	clojure.lang.LazySeq.sval(LazySeq.java:42)
-	clojure.lang.LazySeq.seq(LazySeq.java:60)
-	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
-	clojure.core$chunk_next.invoke(core.clj:644)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
-TRACE 300501:
-	name.stadig.deque$regularize.invoke(deque.clj:327)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
 	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300026:
-	java.util.zip.ZipFile.open(ZipFile.java:Unknown line)
-	java.util.zip.ZipFile.<init>(ZipFile.java:214)
-	java.util.zip.ZipFile.<init>(ZipFile.java:144)
-	java.util.jar.JarFile.<init>(JarFile.java:152)
-	java.util.jar.JarFile.<init>(JarFile.java:89)
-	sun.misc.URLClassPath$JarLoader.getJarFile(URLClassPath.java:706)
-	sun.misc.URLClassPath$JarLoader.access$600(URLClassPath.java:587)
-	sun.misc.URLClassPath$JarLoader$1.run(URLClassPath.java:667)
-TRACE 300059:
-	java.lang.ref.ReferenceQueue.poll(ReferenceQueue.java:98)
-	java.util.WeakHashMap.expungeStaleEntries(WeakHashMap.java:385)
-	java.util.WeakHashMap.getTable(WeakHashMap.java:417)
-	java.util.WeakHashMap.remove(WeakHashMap.java:666)
-	java.util.zip.ZipFile$ZipFileInflaterInputStream.close(ZipFile.java:397)
-	sun.misc.Resource.getBytes(Resource.java:143)
-	java.net.URLClassLoader.defineClass(URLClassLoader.java:443)
+TRACE 300032:
+	java.security.SecureClassLoader.getPermissions(SecureClassLoader.java:192)
+	java.net.URLClassLoader.getPermissions(URLClassLoader.java:633)
+	sun.misc.Launcher$AppClassLoader.getPermissions(Launcher.java:316)
+	java.security.SecureClassLoader.getProtectionDomain(SecureClassLoader.java:206)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:447)
 	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
-TRACE 300098:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:431)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+TRACE 300061:
+	name.stadig.deque.<clinit>(<Unknown Source>:Unknown line)
+TRACE 300062:
+	java.lang.String.substring(String.java:1913)
+	sun.net.www.protocol.jar.Handler.parseURL(Handler.java:145)
+	java.net.URL.<init>(URL.java:614)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:734)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:819)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+TRACE 300064:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1057)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
 	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
 	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
 	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
-	java.lang.ClassLoader.defineClass(ClassLoader.java:787)
-	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	java.net.URLClassLoader.defineClass(URLClassLoader.java:447)
+	clojure.lang.Namespace.<init>(Namespace.java:34)
+	clojure.lang.Namespace.findOrCreate(Namespace.java:176)
+TRACE 300090:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1057)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	clojure.lang.RT.<clinit>(RT.java:38)
+	clojure.lang.Namespace.<init>(Namespace.java:34)
 TRACE 300103:
+	clojure.lang.RT.list(RT.java:1478)
+	clojure.lang.Var.bindRoot(Var.java:304)
+	clojure.lang.Var.intern(Var.java:137)
+	clojure.lang.Var.intern(Var.java:131)
+	clojure.lang.RT.<clinit>(RT.java:173)
+	clojure.lang.Namespace.<init>(Namespace.java:34)
+	clojure.lang.Namespace.findOrCreate(Namespace.java:176)
+	clojure.lang.Var.internPrivate(Var.java:163)
+TRACE 300104:
 	clojure.lang.PersistentList.<clinit>(PersistentList.java:22)
 	clojure.lang.RT.list(RT.java:1478)
 	clojure.lang.Var.bindRoot(Var.java:304)
 	clojure.lang.Var.intern(Var.java:137)
 	clojure.lang.Var.intern(Var.java:131)
 	clojure.lang.RT.<clinit>(RT.java:173)
-	clojure.main.<clinit>(main.java:20)
-TRACE 300107:
+	clojure.lang.Namespace.<init>(Namespace.java:34)
+	clojure.lang.Namespace.findOrCreate(Namespace.java:176)
+TRACE 300108:
+	java.lang.String.toCharArray(String.java:2753)
+	java.util.zip.ZipCoder.getBytes(ZipCoder.java:78)
+	java.util.zip.ZipFile.getInputStream(ZipFile.java:347)
+	java.util.jar.JarFile.getInputStream(JarFile.java:403)
+	sun.misc.URLClassPath$JarLoader$2.getInputStream(URLClassPath.java:752)
+	sun.misc.Resource.cachedInputStream(Resource.java:77)
+	sun.misc.Resource.getByteBuffer(Resource.java:160)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:436)
+TRACE 300109:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1057)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	clojure.lang.Compiler.<clinit>(Compiler.java:101)
 	clojure.lang.RT.baseLoader(RT.java:2012)
-	clojure.lang.RT.load(RT.java:406)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.lang.RT.doInit(RT.java:436)
-	clojure.lang.RT.<clinit>(RT.java:318)
-	clojure.main.<clinit>(main.java:20)
-TRACE 300113:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	sun.misc.URLClassPath.getLoader(URLClassPath.java:351)
-	sun.misc.URLClassPath.getLoader(URLClassPath.java:328)
-	sun.misc.URLClassPath.getResource(URLClassPath.java:194)
-	sun.misc.URLClassPath.getResource(URLClassPath.java:247)
-	java.lang.ClassLoader.getBootstrapResource(ClassLoader.java:1294)
-	java.lang.ClassLoader.getResource(ClassLoader.java:1131)
-	java.lang.ClassLoader.getResource(ClassLoader.java:1129)
-TRACE 300140:
-	java.net.URI.<init>(URI.java:595)
-	java.net.URI.create(URI.java:857)
-	java.nio.file.FileSystems$DefaultFileSystemHolder.defaultFileSystem(FileSystems.java:103)
-	java.nio.file.FileSystems$DefaultFileSystemHolder.<clinit>(FileSystems.java:90)
-	java.nio.file.FileSystems.getDefault(FileSystems.java:176)
-	sun.util.calendar.ZoneInfoFile$1.run(ZoneInfoFile.java:490)
-	sun.util.calendar.ZoneInfoFile$1.run(ZoneInfoFile.java:481)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-TRACE 300154:
-	clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc(PersistentHashMap.java:558)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
-	clojure.lang.Var.setMeta(Var.java:247)
-	clojure.lang.Var.<init>(Var.java:187)
-	clojure.lang.Namespace.intern(Namespace.java:61)
-	clojure.lang.Var.intern(Var.java:170)
-	clojure.lang.RT.var(RT.java:330)
-	clojure.core__init.__init1(<Unknown Source>:Unknown line)
+TRACE 300118:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	java.lang.String.getChars(String.java:826)
+	java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:416)
+	java.lang.StringBuilder.append(StringBuilder.java:132)
+	sun.net.util.URLUtil.urlNoFragString(URLUtil.java:52)
+	sun.net.www.protocol.jar.JarFileFactory.getCachedJarFile(JarFileFactory.java:110)
+	sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:75)
+	sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+TRACE 300152:
+	java.lang.CharacterDataLatin1.toLowerCase(CharacterDataLatin1.java:136)
+	java.lang.Character.toLowerCase(Character.java:6148)
+	java.lang.Character.toLowerCase(Character.java:6119)
+	java.lang.String.regionMatches(String.java:1356)
+	java.net.URL.<init>(URL.java:532)
+	java.net.URL.<init>(URL.java:482)
+	java.net.URL.<init>(URL.java:431)
+	java.net.JarURLConnection.parseSpecs(JarURLConnection.java:179)
 TRACE 300156:
+	sun.misc.Unsafe.getObject(Unsafe.java:Unknown line)
+	java.util.concurrent.ConcurrentHashMap.putIfAbsent(ConcurrentHashMap.java:1146)
+	clojure.lang.Keyword.intern(Keyword.java:37)
+	clojure.lang.RT.keyword(RT.java:326)
+	clojure.core__init.__init1(<Unknown Source>:Unknown line)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+TRACE 300158:
 	java.lang.String.intern(String.java:Unknown line)
 	clojure.lang.Symbol.intern(Symbol.java:56)
 	clojure.lang.RT.var(RT.java:330)
-	clojure.core__init.__init7(<Unknown Source>:Unknown line)
+	clojure.core__init.__init6(<Unknown Source>:Unknown line)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
-TRACE 300157:
+TRACE 300159:
+	clojure.core__init.__init8(<Unknown Source>:Unknown line)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
+TRACE 300160:
 	java.math.BigInteger.<clinit>(BigInteger.java:2670)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:186)
@@ -630,35 +509,8 @@ TRACE 300157:
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
-TRACE 300159:
-	java.lang.String.intern(String.java:Unknown line)
-	clojure.lang.Symbol.intern(Symbol.java:56)
-	clojure.core__init.__init14(<Unknown Source>:Unknown line)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-TRACE 300163:
-	clojure.core__init.__init17(<Unknown Source>:Unknown line)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.lang.RT.doInit(RT.java:436)
-TRACE 300164:
-	clojure.core__init.__init20(<Unknown Source>:Unknown line)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.lang.RT.doInit(RT.java:436)
-TRACE 300165:
-	clojure.core__init.__init21(<Unknown Source>:Unknown line)
+TRACE 300162:
+	clojure.core__init.__init13(<Unknown Source>:Unknown line)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
@@ -667,61 +519,52 @@ TRACE 300165:
 	clojure.lang.RT.load(RT.java:400)
 	clojure.lang.RT.doInit(RT.java:436)
 TRACE 300166:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core__init.load(<Unknown Source>:20)
+	clojure.core__init.__init15(<Unknown Source>:Unknown line)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
 TRACE 300167:
-	java.lang.System.nanoTime(System.java:Unknown line)
-	java.net.URLClassLoader.defineClass(URLClassLoader.java:410)
-	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	sun.misc.Unsafe.getObjectVolatile(Unsafe.java:Unknown line)
+	java.util.concurrent.ConcurrentHashMap.entryAt(ConcurrentHashMap.java:304)
+	java.util.concurrent.ConcurrentHashMap$Segment.put(ConcurrentHashMap.java:437)
+	java.util.concurrent.ConcurrentHashMap.putIfAbsent(ConcurrentHashMap.java:1149)
+	clojure.lang.Keyword.intern(Keyword.java:37)
+	clojure.lang.RT.keyword(RT.java:326)
+	clojure.core__init.__init18(<Unknown Source>:Unknown line)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 TRACE 300168:
-	java.lang.System.nanoTime(System.java:Unknown line)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:422)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core__init.load(<Unknown Source>:983)
+	clojure.core__init.__init20(<Unknown Source>:Unknown line)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
 TRACE 300169:
-	clojure.core__init.load(<Unknown Source>:1065)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:186)
+	clojure.core__init.__init21(<Unknown Source>:Unknown line)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
 	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.lang.RT.doInit(RT.java:436)
 TRACE 300170:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:431)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core__init.load(<Unknown Source>:1065)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300171:
-	clojure.core__init.load(<Unknown Source>:1258)
+	java.lang.String.intern(String.java:Unknown line)
+	clojure.lang.Symbol.intern(Symbol.java:56)
+	clojure.lang.RT.keyword(RT.java:326)
+	clojure.core__init.__init22(<Unknown Source>:Unknown line)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.lang.RT.doInit(RT.java:436)
 TRACE 300172:
-	clojure.core__init.load(<Unknown Source>:1795)
+	clojure.core__init.load(<Unknown Source>:461)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
@@ -730,70 +573,7 @@ TRACE 300172:
 	clojure.lang.RT.load(RT.java:400)
 	clojure.lang.RT.doInit(RT.java:436)
 TRACE 300173:
-	clojure.core$iterate.<clinit>(core.clj:2594)
-	clojure.core__init.load(<Unknown Source>:2401)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-TRACE 300174:
-	clojure.core$prn.<clinit>(core.clj:3306)
-	clojure.core__init.load(<Unknown Source>:3287)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-TRACE 300175:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core__init.load(<Unknown Source>:3585)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-TRACE 300176:
-	clojure.core$with_out_str.<clinit>(core.clj:4170)
-	clojure.core__init.load(<Unknown Source>:4165)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-TRACE 300177:
-	clojure.core$xml_seq.<clinit>(core.clj:4388)
-	clojure.core__init.load(<Unknown Source>:4355)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-TRACE 300178:
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core__init.load(<Unknown Source>:4609)
-TRACE 300179:
-	java.lang.ClassLoader.addClass(ClassLoader.java:262)
-	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
-	java.lang.ClassLoader.defineClass(ClassLoader.java:787)
-	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	java.net.URLClassLoader.defineClass(URLClassLoader.java:447)
-	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-TRACE 300180:
-	clojure.core__init.load(<Unknown Source>:4727)
+	clojure.core__init.load(<Unknown Source>:790)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
@@ -801,16 +581,151 @@ TRACE 300180:
 	clojure.lang.RT.load(RT.java:419)
 	clojure.lang.RT.load(RT.java:400)
 	clojure.lang.RT.doInit(RT.java:436)
-TRACE 300186:
-	clojure.core$fn__4810.<clinit>(core.clj:5167)
-	clojure.core__init.load(<Unknown Source>:5167)
+TRACE 300174:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	java.util.Arrays.copyOf(Arrays.java:2272)
+	sun.misc.Resource.getBytes(Resource.java:117)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:443)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+TRACE 300175:
+	clojure.core__init.load(<Unknown Source>:1258)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
 	clojure.lang.RT.load(RT.java:419)
 	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
+TRACE 300176:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.lang.ThreadLocal.get(ThreadLocal.java:143)
+	java.lang.StringCoding.deref(StringCoding.java:63)
+	java.lang.StringCoding.encode(StringCoding.java:330)
+	java.lang.String.getBytes(String.java:916)
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
+	java.io.File.exists(File.java:772)
+TRACE 300177:
+	clojure.core__init.load(<Unknown Source>:2251)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
+TRACE 300178:
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	clojure.core__init.load(<Unknown Source>:2896)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+TRACE 300179:
+	java.lang.StringCoding$StringEncoder.encode(StringCoding.java:300)
+	java.lang.StringCoding.encode(StringCoding.java:344)
+	java.lang.String.getBytes(String.java:916)
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
+	java.io.File.exists(File.java:772)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1057)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+TRACE 300180:
+	java.util.Arrays.copyOfRange(Arrays.java:2694)
+	java.lang.String.<init>(String.java:203)
+	sun.net.www.ParseUtil.encodePath(ParseUtil.java:146)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1035)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+TRACE 300181:
+	clojure.core__init.load(<Unknown Source>:3287)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
+TRACE 300182:
+	clojure.core__init.load(<Unknown Source>:3475)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
+TRACE 300183:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1057)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	clojure.core__init.load(<Unknown Source>:3585)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+TRACE 300184:
+	java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:64)
+	java.lang.StringBuilder.<init>(StringBuilder.java:85)
+	java.io.UnixFileSystem.resolve(UnixFileSystem.java:108)
+	java.io.File.<init>(File.java:341)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1054)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+TRACE 300185:
+	clojure.core$print_str.<clinit>(core.clj:4208)
+	clojure.core__init.load(<Unknown Source>:4181)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+TRACE 300186:
+	clojure.core__init.load(<Unknown Source>:4355)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
 TRACE 300187:
+	java.util.zip.ZipCoder.getBytes(ZipCoder.java:80)
+	java.util.zip.ZipFile.getInputStream(ZipFile.java:347)
+	java.util.jar.JarFile.getInputStream(JarFile.java:403)
+	sun.misc.URLClassPath$JarLoader$2.getInputStream(URLClassPath.java:752)
+	sun.misc.Resource.cachedInputStream(Resource.java:77)
+	sun.misc.Resource.getByteBuffer(Resource.java:160)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:436)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+TRACE 300188:
+	clojure.core__init.load(<Unknown Source>:4712)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.lang.RT.doInit(RT.java:436)
+TRACE 300189:
+	java.util.zip.ZipFile.getEntry(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.getEntry(ZipFile.java:302)
+	java.util.jar.JarFile.getEntry(JarFile.java:225)
+	java.util.jar.JarFile.getJarEntry(JarFile.java:208)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:817)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+TRACE 300195:
 	clojure.core__init.load(<Unknown Source>:5172)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
@@ -819,17 +734,8 @@ TRACE 300187:
 	clojure.lang.RT.load(RT.java:419)
 	clojure.lang.RT.load(RT.java:400)
 	clojure.lang.RT.doInit(RT.java:436)
-TRACE 300188:
-	java.lang.ClassLoader.findLoadedClass0(ClassLoader.java:Unknown line)
-	java.lang.ClassLoader.findLoadedClass(ClassLoader.java:1080)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:405)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core__init.load(<Unknown Source>:5598)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-TRACE 300189:
-	clojure.core__init.load(<Unknown Source>:5833)
+TRACE 300196:
+	clojure.core__init.load(<Unknown Source>:5172)
 	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
@@ -837,25 +743,34 @@ TRACE 300189:
 	clojure.lang.RT.load(RT.java:419)
 	clojure.lang.RT.load(RT.java:400)
 	clojure.lang.RT.doInit(RT.java:436)
-TRACE 300190:
-	java.util.zip.ZipFile.read(ZipFile.java:Unknown line)
-	java.util.zip.ZipFile.access$1400(ZipFile.java:56)
-	java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:675)
-	java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:411)
-	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
-	sun.misc.Resource.getBytes(Resource.java:124)
-	java.net.URLClassLoader.defineClass(URLClassLoader.java:443)
-	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
-TRACE 300191:
-	clojure.core_print__init.load(<Unknown Source>:135)
-	clojure.core_print__init.<clinit>(<Unknown Source>:Unknown line)
+TRACE 300197:
+	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1057)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	clojure.core__init.load(<Unknown Source>:5833)
+	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
+TRACE 300198:
+	clojure.core_proxy__init.load(<Unknown Source>:9)
+	clojure.core_proxy__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
 	clojure.lang.RT.load(RT.java:419)
 	clojure.lang.RT.load(RT.java:400)
 	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300192:
+TRACE 300199:
+	java.lang.Object.hashCode(Object.java:Unknown line)
+	clojure.lang.Util.hasheq(Util.java:126)
+	clojure.lang.PersistentHashMap.hash(PersistentHashMap.java:121)
+	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
+	clojure.lang.MultiFn.addMethod(MultiFn.java:50)
+	clojure.core_print__init.load(<Unknown Source>:187)
+	clojure.core_print__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+TRACE 300200:
 	clojure.genclass__init.load(<Unknown Source>:83)
 	clojure.genclass__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
@@ -864,26 +779,250 @@ TRACE 300192:
 	clojure.lang.RT.load(RT.java:419)
 	clojure.lang.RT.load(RT.java:400)
 	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300193:
+TRACE 300201:
 	java.lang.Object.clone(Object.java:Unknown line)
 	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:987)
 	clojure.lang.PersistentHashMap.access$000(PersistentHashMap.java:29)
 	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:346)
-	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:343)
 	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
 	clojure.lang.Namespace.intern(Namespace.java:62)
 	clojure.lang.Var.intern(Var.java:170)
-TRACE 300194:
-	clojure.core$find_protocol_method.<clinit>(core_deftype.clj:490)
-	clojure.core_deftype__init.load(<Unknown Source>:370)
+	clojure.lang.RT.var(RT.java:330)
+TRACE 300202:
+	java.util.zip.ZipFile.getEntry(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.getInputStream(ZipFile.java:347)
+	java.util.jar.JarFile.getInputStream(JarFile.java:403)
+	sun.misc.URLClassPath$JarLoader$2.getInputStream(URLClassPath.java:752)
+	sun.misc.Resource.cachedInputStream(Resource.java:77)
+	sun.misc.Resource.getByteBuffer(Resource.java:160)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:436)
+	java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+TRACE 300203:
+	clojure.core$emit_impl.<clinit>(core_deftype.clj:733)
+	clojure.core_deftype__init.load(<Unknown Source>:632)
 	clojure.core_deftype__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
 	clojure.lang.RT.load(RT.java:419)
 	clojure.lang.RT.load(RT.java:400)
-TRACE 300195:
+TRACE 300204:
+	java.lang.System.nanoTime(System.java:Unknown line)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:422)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:186)
+	clojure.core.protocols__init.__init0(<Unknown Source>:Unknown line)
+	clojure.core.protocols__init.<clinit>(<Unknown Source>:Unknown line)
+TRACE 300205:
+	clojure.core$refer.doInvoke(core.clj:3779)
+	clojure.lang.RestFn.invoke(RestFn.java:410)
+	clojure.core.protocols$loading__4784__auto__.invoke(protocols.clj:9)
+	clojure.core.protocols__init.load(<Unknown Source>:9)
+	clojure.core.protocols__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+TRACE 300206:
+	clojure.lang.PersistentHashMap$NodeSeq.first(PersistentHashMap.java:1095)
+	clojure.lang.PersistentHashMap$ArrayNode$Seq.first(PersistentHashMap.java:492)
+	clojure.lang.APersistentMap$KeySeq.first(APersistentMap.java:143)
+	clojure.lang.RT.first(RT.java:566)
+	clojure.core$first.invoke(core.clj:55)
+	clojure.core$refer.doInvoke(core.clj:3771)
+	clojure.lang.RestFn.invoke(RestFn.java:410)
+	clojure.core.protocols$loading__4784__auto__.invoke(protocols.clj:9)
+TRACE 300207:
+	clojure.lang.Util.equiv(Util.java:30)
+	clojure.lang.PersistentArrayMap.equalKey(PersistentArrayMap.java:201)
+	clojure.lang.PersistentArrayMap.indexOf(PersistentArrayMap.java:194)
+	clojure.lang.PersistentArrayMap.assoc(PersistentArrayMap.java:127)
+	clojure.lang.PersistentArrayMap.assoc(PersistentArrayMap.java:29)
+	clojure.lang.RT.assoc(RT.java:691)
+	clojure.core$assoc.invoke(core.clj:187)
+	clojure.core$assoc_in.invoke(core.clj:5459)
+TRACE 300208:
+	sun.misc.Unsafe.getObject(Unsafe.java:Unknown line)
+	java.util.concurrent.ConcurrentHashMap.putIfAbsent(ConcurrentHashMap.java:1146)
+	clojure.lang.Keyword.intern(Keyword.java:37)
+	clojure.lang.RT.keyword(RT.java:326)
+	clojure.gvec__init.__init0(<Unknown Source>:Unknown line)
+	clojure.gvec__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+TRACE 300209:
+	clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc(PersistentHashMap.java:708)
+	clojure.lang.PersistentHashMap.createNode(PersistentHashMap.java:1018)
+	clojure.lang.PersistentHashMap.access$300(PersistentHashMap.java:29)
+	clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc(PersistentHashMap.java:537)
 	clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc(PersistentHashMap.java:526)
+	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
+	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:29)
+	clojure.lang.RT.assoc(RT.java:691)
+TRACE 300210:
+	clojure.lang.PersistentHashMap$BitmapIndexedNode.find(PersistentHashMap.java:610)
+	clojure.lang.PersistentHashMap$ArrayNode.find(PersistentHashMap.java:378)
+	clojure.lang.PersistentHashMap.valAt(PersistentHashMap.java:153)
+	clojure.lang.PersistentHashMap.valAt(PersistentHashMap.java:157)
+	clojure.lang.APersistentMap.invoke(APersistentMap.java:188)
+	clojure.core$refer.doInvoke(core.clj:3773)
+	clojure.lang.RestFn.invoke(RestFn.java:410)
+	clojure.instant$loading__4784__auto__.invoke(instant.clj:9)
+TRACE 300211:
+	clojure.instant__init.load(<Unknown Source>:17)
+	clojure.instant__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.core$load$fn__4890.invoke(core.clj:5415)
+TRACE 300226:
+	clojure.lang.PersistentArrayMap.indexOf(PersistentArrayMap.java:192)
+	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:177)
+	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:184)
+	clojure.lang.Var.isPublic(Var.java:270)
+	clojure.core$ns_publics$fn__4371.invoke(core.clj:3726)
+	clojure.core$filter_key.invoke(core.clj:3650)
+	clojure.core$ns_publics.invoke(core.clj:3727)
+	clojure.core$refer.doInvoke(core.clj:3765)
+TRACE 300227:
+	clojure.lang.PersistentArrayMap.indexOf(PersistentArrayMap.java:192)
+	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:177)
+	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:184)
+	clojure.lang.APersistentMap.invoke(APersistentMap.java:188)
+	clojure.core$refer.doInvoke(core.clj:3779)
+	clojure.lang.RestFn.invoke(RestFn.java:410)
+	clojure.uuid$loading__4784__auto__.invoke(uuid.clj:9)
+	clojure.uuid__init.load(<Unknown Source>:9)
+TRACE 300228:
+	sun.misc.Unsafe.getObject(Unsafe.java:Unknown line)
+	java.util.concurrent.ConcurrentHashMap.putIfAbsent(ConcurrentHashMap.java:1146)
+	java.lang.ClassLoader.getClassLoadingLock(ClassLoader.java:458)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:403)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
+	clojure.uuid__init.load(<Unknown Source>:18)
+	clojure.uuid__init.<clinit>(<Unknown Source>:Unknown line)
+TRACE 300229:
+	java.lang.String.intern(String.java:Unknown line)
+	clojure.lang.Symbol.intern(Symbol.java:56)
+	clojure.lang.RT.keyword(RT.java:326)
+	clojure.java.io__init.__init0(<Unknown Source>:Unknown line)
+	clojure.java.io__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+TRACE 300230:
+	java.util.concurrent.atomic.AtomicBoolean.get(AtomicBoolean.java:86)
+	clojure.lang.Var.get(Var.java:201)
+	clojure.core$refer.doInvoke(core.clj:3779)
+	clojure.lang.RestFn.invoke(RestFn.java:410)
+	clojure.java.io$loading__4784__auto__.invoke(io.clj:9)
+	clojure.java.io__init.load(<Unknown Source>:9)
+	clojure.java.io__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+TRACE 300231:
+	java.lang.CharacterDataLatin1.toLowerCase(CharacterDataLatin1.java:134)
+	java.lang.Character.toLowerCase(Character.java:6148)
+	java.lang.Character.toLowerCase(Character.java:6119)
+	java.lang.String.regionMatches(String.java:1356)
+	java.net.URL.<init>(URL.java:532)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:734)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:819)
+TRACE 300232:
+	java.lang.Object.clone(Object.java:Unknown line)
+	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:987)
+	clojure.lang.PersistentHashMap.access$000(PersistentHashMap.java:29)
+	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:342)
+	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:343)
+	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
+	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:29)
+	clojure.lang.RT.assoc(RT.java:691)
+TRACE 300233:
+	java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:64)
+	java.lang.StringBuilder.<init>(StringBuilder.java:85)
+	java.net.URLStreamHandler.parseURL(URLStreamHandler.java:249)
+	sun.net.www.protocol.file.Handler.parseURL(Handler.java:67)
+	java.net.URL.<init>(URL.java:614)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1035)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+TRACE 300235:
+	clojure.lang.LockingTransaction.run(LockingTransaction.java:262)
+	clojure.lang.LockingTransaction.runInTransaction(LockingTransaction.java:231)
+	clojure.core$load_one.invoke(core.clj:5232)
+	clojure.core$load_lib.doInvoke(core.clj:5264)
+	clojure.lang.RestFn.applyTo(RestFn.java:142)
+	clojure.core$apply.invoke(core.clj:603)
+	clojure.core$load_libs.doInvoke(core.clj:5298)
+	clojure.lang.RestFn.applyTo(RestFn.java:137)
+TRACE 300253:
+	java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:64)
+	java.lang.StringBuilder.<init>(StringBuilder.java:85)
+	sun.net.www.protocol.jar.Handler.parseURL(Handler.java:160)
+	java.net.URL.<init>(URL.java:614)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$JarLoader.checkResource(URLClassPath.java:734)
+	sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:819)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+TRACE 300254:
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
+	java.io.File.exists(File.java:772)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1057)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+TRACE 300255:
+	java.lang.Throwable.fillInStackTrace(Throwable.java:Unknown line)
+	java.lang.Throwable.fillInStackTrace(Throwable.java:782)
+	java.lang.Throwable.<init>(Throwable.java:310)
+	java.lang.Exception.<init>(Exception.java:102)
+	java.security.PrivilegedActionException.<init>(PrivilegedActionException.java:66)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
+TRACE 300256:
+	clojure.java.io__init.load(<Unknown Source>:377)
+	clojure.java.io__init.<clinit>(<Unknown Source>:Unknown line)
+	java.lang.Class.forName0(Class.java:Unknown line)
+	java.lang.Class.forName(Class.java:264)
+	clojure.lang.RT.loadClassForName(RT.java:2056)
+	clojure.lang.RT.load(RT.java:419)
+	clojure.lang.RT.load(RT.java:400)
+	clojure.core$load$fn__4890.invoke(core.clj:5415)
+TRACE 300260:
+	java.util.zip.ZipFile.freeEntry(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.access$1000(ZipFile.java:56)
+	java.util.zip.ZipFile$ZipFileInputStream.close(ZipFile.java:724)
+	java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:683)
+	java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:411)
+	java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	sun.misc.Resource.getBytes(Resource.java:124)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:443)
+TRACE 300267:
+	java.net.URL.<init>(URL.java:507)
+	java.net.URL.<init>(URL.java:482)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1034)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:195)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:358)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
+	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+TRACE 300275:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.lang.ThreadLocal.get(ThreadLocal.java:143)
+	clojure.lang.Var.getThreadBinding(Var.java:384)
+	clojure.lang.Var.deref(Var.java:207)
+	clojure.lang.Var.get(Var.java:203)
+	clojure.core$refer.doInvoke(core.clj:3779)
+	clojure.lang.RestFn.invoke(RestFn.java:410)
+	clojure.lang.Var.invoke(Var.java:415)
+TRACE 300276:
 	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
 	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:29)
 	clojure.lang.RT.assoc(RT.java:691)
@@ -891,1015 +1030,458 @@ TRACE 300195:
 	clojure.core$filter_key.invoke(core.clj:3651)
 	clojure.core$ns_publics.invoke(core.clj:3727)
 	clojure.core$refer.doInvoke(core.clj:3765)
-TRACE 300196:
-	java.lang.Object.clone(Object.java:Unknown line)
-	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:987)
-	clojure.lang.PersistentHashMap.access$000(PersistentHashMap.java:29)
-	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:342)
-	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:343)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
-	clojure.lang.Namespace.reference(Namespace.java:103)
-	clojure.lang.Namespace.refer(Namespace.java:168)
-TRACE 300197:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:431)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core.protocols__init.load(<Unknown Source>:33)
-	clojure.core.protocols__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300198:
-	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:177)
-	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:184)
-	clojure.lang.KeywordLookupSite$1.get(KeywordLookupSite.java:45)
-	clojure.core$protocol_QMARK_.invoke(core_deftype.clj:495)
-	clojure.core$extend.doInvoke(core_deftype.clj:724)
 	clojure.lang.RestFn.invoke(RestFn.java:439)
-	clojure.core.protocols__init.load(<Unknown Source>:157)
-	clojure.core.protocols__init.<clinit>(<Unknown Source>:Unknown line)
-TRACE 300199:
-	java.lang.Object.clone(Object.java:Unknown line)
-	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:993)
-	clojure.lang.PersistentHashMap.access$200(PersistentHashMap.java:29)
-	clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc(PersistentHashMap.java:529)
-	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:343)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
-	clojure.lang.Namespace.reference(Namespace.java:103)
-	clojure.lang.Namespace.refer(Namespace.java:168)
-TRACE 300214:
-	clojure.uuid$loading__4784__auto__.invoke(uuid.clj:9)
-	clojure.uuid__init.load(<Unknown Source>:9)
-	clojure.uuid__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-TRACE 300215:
-	clojure.core__init.load(<Unknown Source>:6032)
-	clojure.core__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.lang.RT.doInit(RT.java:436)
-TRACE 300216:
-	java.lang.Object.clone(Object.java:Unknown line)
-	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:993)
-	clojure.lang.PersistentHashMap.access$200(PersistentHashMap.java:29)
-	clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc(PersistentHashMap.java:529)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:29)
-	clojure.lang.RT.assoc(RT.java:691)
-	clojure.core$assoc.invoke(core.clj:187)
-TRACE 300217:
-	java.lang.Object.clone(Object.java:Unknown line)
-	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:987)
-	clojure.lang.PersistentHashMap.access$000(PersistentHashMap.java:29)
-	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:346)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
-	clojure.lang.Namespace.reference(Namespace.java:103)
-	clojure.lang.Namespace.refer(Namespace.java:168)
-	clojure.core$refer.doInvoke(core.clj:3779)
-TRACE 300221:
-	java.util.TreeMap.put(TreeMap.java:533)
-	clojure.lang.LockingTransaction.doCommute(LockingTransaction.java:478)
-	clojure.lang.Ref.commute(Ref.java:169)
-	clojure.core$commute.doInvoke(core.clj:2180)
-	clojure.lang.RestFn.invoke(RestFn.java:442)
-	clojure.core$load_one$fn__4827.invoke(core.clj:5233)
-	clojure.lang.AFn.call(AFn.java:18)
-	clojure.lang.LockingTransaction.run(LockingTransaction.java:263)
-TRACE 300236:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:431)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.java.io__init.load(<Unknown Source>:40)
-	clojure.java.io__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300237:
-	clojure.java.io__init.load(<Unknown Source>:232)
-	clojure.java.io__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300238:
-	clojure.java.io__init.load(<Unknown Source>:328)
-	clojure.java.io__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300239:
-	java.lang.Object.<init>(Object.java:37)
-	java.io.InputStream.<init>(InputStream.java:45)
-	java.io.FilterInputStream.<init>(FilterInputStream.java:61)
-	java.util.zip.InflaterInputStream.<init>(InflaterInputStream.java:81)
-	java.util.zip.ZipFile$ZipFileInflaterInputStream.<init>(ZipFile.java:385)
-	java.util.zip.ZipFile.getInputStream(ZipFile.java:366)
-	java.util.jar.JarFile.getInputStream(JarFile.java:403)
-	sun.misc.URLClassPath$JarLoader$2.getInputStream(URLClassPath.java:752)
-TRACE 300249:
-	clojure.lang.RT.first(RT.java:566)
-	clojure.core$first.invoke(core.clj:55)
-	clojure.core$reduce1.invoke(core.clj:880)
-	clojure.core$reduce1.invoke(core.clj:871)
-	clojure.core$merge.doInvoke(core.clj:2631)
-	clojure.lang.RestFn.applyTo(RestFn.java:137)
-	clojure.lang.AReference.alterMeta(AReference.java:31)
-	clojure.core$alter_meta_BANG_.doInvoke(core.clj:2153)
-TRACE 300257:
-	clojure.core$expand_method_impl_cache.invoke(core_deftype.clj:458)
-	clojure.core$_cache_protocol_fn.invoke(core_deftype.clj:528)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$load_data_readers$fn__6360.invoke(core.clj:6683)
-	clojure.lang.AFn.applyToHelper(AFn.java:161)
-	clojure.lang.AFn.applyTo(AFn.java:151)
-	clojure.lang.Var.alterRoot(Var.java:336)
-TRACE 300258:
-	java.lang.Object.clone(Object.java:Unknown line)
-	clojure.lang.PersistentHashMap.cloneAndSet(PersistentHashMap.java:987)
-	clojure.lang.PersistentHashMap.access$000(PersistentHashMap.java:29)
-	clojure.lang.PersistentHashMap$ArrayNode.assoc(PersistentHashMap.java:346)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:143)
-	clojure.lang.PersistentHashMap.assoc(PersistentHashMap.java:29)
-	clojure.lang.RT.assoc(RT.java:691)
-	clojure.core$assoc.invoke(core.clj:187)
-TRACE 300259:
-	java.lang.Object.getClass(Object.java:Unknown line)
-	clojure.lang.Numbers.bitOpsCast(Numbers.java:1000)
-	clojure.lang.Numbers.and(Numbers.java:1447)
-	clojure.core$shift_mask.invoke(core.clj:5830)
-	clojure.core$maybe_min_hash$fn__4949$fn__4951.invoke(core.clj:5840)
-	clojure.core$map$fn__4087.invoke(core.clj:2434)
-	clojure.lang.LazySeq.sval(LazySeq.java:42)
-	clojure.lang.LazySeq.seq(LazySeq.java:60)
-TRACE 300260:
-	clojure.main__init.load(<Unknown Source>:85)
-	clojure.main__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300262:
-	java.util.regex.Pattern.intersection(Pattern.java:5159)
-	java.util.regex.Pattern.clazz(Pattern.java:2482)
-	java.util.regex.Pattern.sequence(Pattern.java:2030)
-	java.util.regex.Pattern.expr(Pattern.java:1964)
-	java.util.regex.Pattern.group0(Pattern.java:2854)
-	java.util.regex.Pattern.sequence(Pattern.java:2018)
-	java.util.regex.Pattern.expr(Pattern.java:1964)
-	java.util.regex.Pattern.compile(Pattern.java:1665)
-TRACE 300264:
-	clojure.lang.PersistentList.create(PersistentList.java:69)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:965)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1126)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:962)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1126)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:962)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1126)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:962)
-TRACE 300267:
-	clojure.lang.Compiler$TryExpr$Parser.parse(Compiler.java:2199)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6455)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyze(Compiler.java:6223)
-	clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5618)
-	clojure.lang.Compiler$FnMethod.parse(Compiler.java:5054)
-	clojure.lang.Compiler$FnExpr.parse(Compiler.java:3674)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6453)
-TRACE 300275:
-	clojure.asm.MethodWriter.getSize(MethodWriter.java:2121)
-	clojure.asm.ClassWriter.toByteArray(ClassWriter.java:725)
-	clojure.lang.Compiler$ObjExpr.compile(Compiler.java:4273)
-	clojure.lang.Compiler$FnExpr.parse(Compiler.java:3732)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6453)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.eval(Compiler.java:6508)
-	clojure.lang.Compiler.eval(Compiler.java:6500)
-TRACE 300276:
-	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
-	java.lang.ClassLoader.defineClass(ClassLoader.java:787)
-	java.lang.ClassLoader.defineClass(ClassLoader.java:630)
-	clojure.lang.DynamicClassLoader.defineClass(DynamicClassLoader.java:46)
-	clojure.lang.Compiler$ObjExpr.getCompiledClass(Compiler.java:4579)
-	clojure.lang.Compiler$FnExpr.parse(Compiler.java:3742)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6453)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-TRACE 300280:
-	clojure.lang.RT.get(RT.java:635)
-	clojure.lang.Compiler.referenceLocal(Compiler.java:6886)
-	clojure.lang.Compiler.isMacro(Compiler.java:6302)
-	clojure.lang.Compiler.macroexpand1(Compiler.java:6361)
-	clojure.lang.Compiler.macroexpand(Compiler.java:6427)
-	clojure.lang.Compiler.eval(Compiler.java:6495)
-	clojure.lang.Compiler.eval(Compiler.java:6501)
-	clojure.lang.Compiler.load(Compiler.java:6952)
-TRACE 300282:
-	clojure.lang.PersistentHashMap$ArrayNode.find(PersistentHashMap.java:370)
-	clojure.lang.PersistentHashMap.entryAt(PersistentHashMap.java:133)
-	clojure.lang.Var.getThreadBinding(Var.java:384)
-	clojure.lang.Var.deref(Var.java:207)
-	clojure.lang.Compiler$InvokeExpr.emitArgsAndCall(Compiler.java:3478)
-	clojure.lang.Compiler$InvokeExpr.emit(Compiler.java:3404)
-	clojure.lang.Compiler$BodyExpr.emit(Compiler.java:5662)
-	clojure.lang.Compiler$TryExpr.emit(Compiler.java:2034)
-TRACE 300283:
-	clojure.test__init.load(<Unknown Source>:17)
-	clojure.test__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300284:
-	java.lang.Object.hashCode(Object.java:Unknown line)
-	clojure.lang.Util.hasheq(Util.java:126)
-	clojure.lang.PersistentHashMap.hash(PersistentHashMap.java:121)
-	clojure.lang.PersistentHashMap.entryAt(PersistentHashMap.java:133)
-	clojure.lang.Var.getThreadBinding(Var.java:384)
-	clojure.lang.Var.deref(Var.java:207)
-	clojure.lang.Var.get(Var.java:203)
-	clojure.core$check_cyclic_dependency.invoke(core.clj:5311)
-TRACE 300285:
-	clojure.walk__init.load(<Unknown Source>:21)
-	clojure.walk__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300286:
+TRACE 300277:
 	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
 	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
 	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
 	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
 	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.stacktrace__init.load(<Unknown Source>:14)
-	clojure.stacktrace__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-TRACE 300288:
-	clojure.test__init.load(<Unknown Source>:244)
-	clojure.test__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.loadClassForName(RT.java:2056)
-	clojure.lang.RT.load(RT.java:419)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300292:
-	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
-	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1057)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.test__init.load(<Unknown Source>:664)
-	clojure.test__init.<clinit>(<Unknown Source>:Unknown line)
-TRACE 300299:
-	sun.net.www.protocol.file.FileURLConnection.initializeHeaders(FileURLConnection.java:133)
-	sun.net.www.protocol.file.FileURLConnection.getLastModified(FileURLConnection.java:178)
-	clojure.lang.RT.lastModified(RT.java:379)
-	clojure.lang.RT.load(RT.java:410)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-	clojure.core$load.doInvoke(core.clj:5414)
-	clojure.lang.RestFn.invoke(RestFn.java:408)
-TRACE 300334:
-	java.lang.System.arraycopy(System.java:Unknown line)
-	java.io.BufferedInputStream.read1(BufferedInputStream.java:280)
-	java.io.BufferedInputStream.read(BufferedInputStream.java:334)
-	java.io.DataInputStream.readFully(DataInputStream.java:195)
-	java.io.DataInputStream.readUTF(DataInputStream.java:609)
-	java.io.DataInputStream.readUTF(DataInputStream.java:564)
-	java.util.Currency.readStringArray(Currency.java:668)
-	java.util.Currency.access$200(Currency.java:76)
-TRACE 300342:
-	clojure.lang.Var.getThreadBinding(Var.java:384)
-	clojure.lang.Var.deref(Var.java:207)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6434)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6443)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyze(Compiler.java:6223)
-	clojure.lang.Compiler$HostExpr$Parser.parse(Compiler.java:903)
-TRACE 300343:
+	clojure.lang.RT.loadClassForName(RT.java:2050)
+TRACE 300278:
+	sun.misc.Unsafe.compareAndSwapObject(Unsafe.java:Unknown line)
+	java.util.concurrent.atomic.AtomicReference.compareAndSet(AtomicReference.java:114)
+	clojure.lang.Namespace.reference(Namespace.java:104)
+	clojure.lang.Namespace.refer(Namespace.java:168)
 	clojure.core$refer.doInvoke(core.clj:3779)
-	clojure.lang.RestFn.invoke(RestFn.java:439)
-	name.stadig.deque$eval11$loading__4784__auto____12.invoke(deque.clj:10)
-	name.stadig.deque$eval11.invoke(deque.clj:10)
-	clojure.lang.Compiler.eval(Compiler.java:6511)
-	clojure.lang.Compiler.eval(Compiler.java:6501)
-	clojure.lang.Compiler.load(Compiler.java:6952)
-	clojure.lang.RT.loadResourceScript(RT.java:359)
-TRACE 300344:
-	clojure.core$filter_key.invoke(core.clj:3650)
-	clojure.core$ns_publics.invoke(core.clj:3727)
-	clojure.core$refer.doInvoke(core.clj:3765)
 	clojure.lang.RestFn.invoke(RestFn.java:439)
 	name.stadig.deque.protocol$loading__4784__auto__.invoke(protocol.clj:10)
 	name.stadig.deque.protocol__init.load(<Unknown Source>:10)
-	name.stadig.deque.protocol__init.<clinit>(<Unknown Source>:Unknown line)
-	java.lang.Class.forName0(Class.java:Unknown line)
-TRACE 300345:
-	clojure.core$meta.invoke(core.clj:201)
-	clojure.core$intern.invoke(core.clj:5591)
+TRACE 300279:
+	name.stadig.deque.protocol$fn__81.invoke(protocol.clj:21)
+	clojure.core$_reset_methods.invoke(core_deftype.clj:564)
 	name.stadig.deque.protocol__init.load(<Unknown Source>:21)
 	name.stadig.deque.protocol__init.<clinit>(<Unknown Source>:Unknown line)
 	java.lang.Class.forName0(Class.java:Unknown line)
 	java.lang.Class.forName(Class.java:264)
 	clojure.lang.RT.loadClassForName(RT.java:2056)
 	clojure.lang.RT.load(RT.java:419)
-TRACE 300346:
-	java.lang.ClassLoader.findBootstrapClass(ClassLoader.java:Unknown line)
-	java.lang.ClassLoader.findBootstrapClassOrNull(ClassLoader.java:1057)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:412)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	clojure.core$sigs.invoke(core.clj:220)
-	clojure.core$defn.doInvoke(core.clj:294)
-TRACE 300347:
-	java.util.ArrayList$Itr.checkForComodification(ArrayList.java:818)
-	java.util.ArrayList$ListItr.previous(ArrayList.java:846)
-	clojure.lang.PersistentList.create(PersistentList.java:71)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:965)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1126)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:962)
-	clojure.lang.LispReader.read(LispReader.java:180)
-	clojure.lang.Compiler.load(Compiler.java:6949)
-TRACE 300352:
-	clojure.lang.Numbers$LongOps.combine(Numbers.java:394)
-	clojure.lang.Numbers.equal(Numbers.java:214)
-	clojure.lang.Util.equiv(Util.java:29)
-	clojure.core$not_EQ_.invoke(core.clj:761)
-	clojure.core$distinct_QMARK_.doInvoke(core.clj:5023)
-	clojure.lang.RestFn.applyTo(RestFn.java:142)
-	clojure.core$apply.invoke(core.clj:601)
-	clojure.core$maybe_min_hash$fn__4949.invoke(core.clj:5840)
-TRACE 300353:
-	clojure.lang.RestFn.applyTo(RestFn.java:130)
-	clojure.core$apply.invoke(core.clj:601)
-	clojure.core$maybe_min_hash$fn__4949.invoke(core.clj:5840)
-	clojure.core$filter$fn__4106.invoke(core.clj:2476)
-	clojure.lang.LazySeq.sval(LazySeq.java:42)
-	clojure.lang.LazySeq.seq(LazySeq.java:60)
-	clojure.lang.LazySeq.first(LazySeq.java:82)
-	clojure.lang.RT.first(RT.java:566)
-TRACE 300354:
-	clojure.lang.AFn.applyToHelper(AFn.java:185)
-	clojure.lang.Var.applyTo(Var.java:532)
-	clojure.lang.Compiler.macroexpand1(Compiler.java:6366)
-	clojure.lang.Compiler.macroexpand(Compiler.java:6427)
-	clojure.lang.Compiler.eval(Compiler.java:6495)
-	clojure.lang.Compiler.load(Compiler.java:6952)
-	clojure.lang.RT.loadResourceScript(RT.java:359)
-	clojure.lang.RT.loadResourceScript(RT.java:350)
-TRACE 300357:
-	clojure.asm.Type.getType(Type.java:238)
-	clojure.asm.Type.getArgumentTypes(Type.java:335)
-	clojure.lang.Compiler$StaticMethodExpr.emit(Compiler.java:1661)
-	clojure.lang.Compiler$InvokeExpr.emitArgsAndCall(Compiler.java:3464)
-	clojure.lang.Compiler$InvokeExpr.emit(Compiler.java:3404)
-	clojure.lang.Compiler$IfExpr.doEmit(Compiler.java:2585)
-	clojure.lang.Compiler$IfExpr.emit(Compiler.java:2544)
-	clojure.lang.Compiler$BodyExpr.emit(Compiler.java:5662)
-TRACE 300358:
-	java.lang.Class.getName(Class.java:571)
-	clojure.asm.Type.getDescriptor(Type.java:717)
-	clojure.asm.Type.getDescriptor(Type.java:617)
-	clojure.asm.Type.getType(Type.java:257)
-	clojure.lang.Compiler$InvokeExpr.emitProto(Compiler.java:3427)
-	clojure.lang.Compiler$InvokeExpr.emit(Compiler.java:3397)
-	clojure.lang.Compiler$MethodExpr.emitTypedArgs(Compiler.java:1341)
-	clojure.lang.Compiler$StaticMethodExpr.emitUnboxed(Compiler.java:1620)
-TRACE 300359:
-	clojure.lang.Compiler$ObjExpr.emitLocal(Compiler.java:4711)
-	clojure.lang.Compiler$ObjExpr.access$1700(Compiler.java:3783)
-	clojure.lang.Compiler$LocalBindingExpr.emit(Compiler.java:5573)
-	clojure.lang.Compiler$InvokeExpr.emitProto(Compiler.java:3418)
-	clojure.lang.Compiler$InvokeExpr.emit(Compiler.java:3397)
-	clojure.lang.Compiler$InvokeExpr.emitArgsAndCall(Compiler.java:3464)
-	clojure.lang.Compiler$InvokeExpr.emit(Compiler.java:3404)
-	clojure.lang.Compiler$BodyExpr.emit(Compiler.java:5662)
-TRACE 300360:
-	clojure.lang.RT.map(RT.java:1448)
-	clojure.lang.Compiler.eval(Compiler.java:6484)
-	clojure.lang.Compiler.load(Compiler.java:6952)
-	clojure.lang.RT.loadResourceScript(RT.java:359)
-	clojure.lang.RT.loadResourceScript(RT.java:350)
-	clojure.lang.RT.load(RT.java:429)
-	clojure.lang.RT.load(RT.java:400)
-	clojure.core$load$fn__4890.invoke(core.clj:5415)
-TRACE 300361:
-	java.lang.System.identityHashCode(System.java:Unknown line)
-	java.util.IdentityHashMap.hash(IdentityHashMap.java:301)
-	java.util.IdentityHashMap.put(IdentityHashMap.java:429)
-	clojure.lang.Compiler.registerConstant(Compiler.java:6547)
-	clojure.lang.Compiler.registerVar(Compiler.java:6857)
-	clojure.lang.Compiler.lookupVar(Compiler.java:6843)
-	clojure.lang.Compiler.isMacro(Compiler.java:6306)
-	clojure.lang.Compiler.macroexpand1(Compiler.java:6361)
-TRACE 300364:
-	clojure.lang.PersistentVector$ChunkedSeq.<init>(PersistentVector.java:257)
-	clojure.lang.PersistentVector.chunkedSeq(PersistentVector.java:228)
-	clojure.lang.PersistentVector.seq(PersistentVector.java:232)
-	clojure.lang.Compiler.getMatchingParams(Compiler.java:2319)
-	clojure.lang.Compiler$StaticMethodExpr.<init>(Compiler.java:1555)
-	clojure.lang.Compiler$HostExpr$Parser.parse(Compiler.java:938)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6455)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-TRACE 300366:
-	clojure.lang.LispReader.read1(LispReader.java:142)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1110)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:962)
-	clojure.lang.LispReader.read(LispReader.java:180)
-	clojure.lang.Compiler.load(Compiler.java:6949)
-	clojure.lang.RT.loadResourceScript(RT.java:359)
-	clojure.lang.RT.loadResourceScript(RT.java:350)
-	clojure.lang.RT.load(RT.java:429)
-TRACE 300368:
-	java.lang.Class.getComponentType(Class.java:Unknown line)
-	java.lang.reflect.Field.getTypeName(Field.java:998)
-	java.lang.reflect.Method.toString(Method.java:413)
-	clojure.lang.Compiler$StaticMethodExpr.emitUnboxed(Compiler.java:1627)
-	clojure.lang.Compiler$MethodExpr.emitTypedArgs(Compiler.java:1310)
-	clojure.lang.Compiler$StaticMethodExpr.emitUnboxed(Compiler.java:1620)
-	clojure.lang.Compiler$MethodExpr.emitTypedArgs(Compiler.java:1310)
-	clojure.lang.Compiler$StaticMethodExpr.emit(Compiler.java:1653)
-TRACE 300371:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-TRACE 300376:
-	clojure.lang.RT.classForName(RT.java:2041)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-	clojure.lang.Compiler$LocalBinding.getJavaClass(Compiler.java:5502)
-	clojure.lang.Compiler$LocalBindingExpr.getJavaClass(Compiler.java:5593)
-	clojure.lang.Compiler.getMatchingParams(Compiler.java:2324)
-	clojure.lang.Compiler$StaticMethodExpr.<init>(Compiler.java:1555)
-	clojure.lang.Compiler$HostExpr$Parser.parse(Compiler.java:938)
-TRACE 300379:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300381:
-	clojure.lang.Util.sneakyThrow0(Util.java:193)
-	clojure.lang.Util.sneakyThrow(Util.java:187)
-	clojure.lang.RT.classForName(RT.java:2043)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-	clojure.lang.Compiler$LocalBinding.getJavaClass(Compiler.java:5502)
-	clojure.lang.Compiler$LocalBindingExpr.getJavaClass(Compiler.java:5593)
-	clojure.lang.Compiler.getMatchingParams(Compiler.java:2324)
-TRACE 300382:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-TRACE 300383:
-	java.lang.Class.isArray(Class.java:Unknown line)
-	java.lang.reflect.Field.getTypeName(Field.java:992)
-	java.lang.reflect.Method.toString(Method.java:408)
-	clojure.lang.Compiler$StaticMethodExpr.emitUnboxed(Compiler.java:1627)
-	clojure.lang.Compiler$MethodExpr.emitTypedArgs(Compiler.java:1310)
-	clojure.lang.Compiler$StaticMethodExpr.emit(Compiler.java:1653)
-	clojure.lang.Compiler$MethodExpr.emitTypedArgs(Compiler.java:1341)
-	clojure.lang.Compiler$StaticMethodExpr.emit(Compiler.java:1653)
-TRACE 300385:
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.core$destructure$pb__4421.invoke(core.clj:3948)
-	clojure.core$destructure$pb__4421$pvec__4422.invoke(core.clj:3920)
-	clojure.core$destructure$pb__4421.invoke(core.clj:3949)
-	clojure.core$destructure$process_entry__4436.invoke(core.clj:3952)
-	clojure.core$reduce1.invoke(core.clj:880)
-	clojure.core$destructure.invoke(core.clj:3955)
-	clojure.core$let.doInvoke(core.clj:3968)
-TRACE 300387:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-TRACE 300388:
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300389:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300390:
-	java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300392:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-TRACE 300393:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300395:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-TRACE 300397:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-	clojure.lang.Compiler$LocalBinding.getJavaClass(Compiler.java:5502)
-TRACE 300398:
-	clojure.lang.PersistentHashMap.valAt(PersistentHashMap.java:153)
-	clojure.lang.PersistentHashMap.valAt(PersistentHashMap.java:157)
-	clojure.lang.Namespace.getMapping(Namespace.java:192)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:960)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-	clojure.lang.Compiler$LocalBinding.getJavaClass(Compiler.java:5502)
-	clojure.lang.Compiler$LocalBindingExpr.getJavaClass(Compiler.java:5593)
-	clojure.lang.Compiler.getMatchingParams(Compiler.java:2324)
-TRACE 300401:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-TRACE 300402:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:431)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-TRACE 300403:
-	clojure.lang.Compiler$LocalBindingExpr.<init>(Compiler.java:5531)
-	clojure.lang.Compiler.analyzeSymbol(Compiler.java:6650)
-	clojure.lang.Compiler.analyze(Compiler.java:6244)
-	clojure.lang.Compiler.analyze(Compiler.java:6223)
-	clojure.lang.Compiler$InvokeExpr.parse(Compiler.java:3548)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6457)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyze(Compiler.java:6223)
-TRACE 300404:
+TRACE 300280:
 	java.lang.Object.getClass(Object.java:Unknown line)
-	java.util.Arrays.copyOf(Arrays.java:2219)
-	java.util.ArrayList.toArray(ArrayList.java:329)
-	clojure.lang.LazilyPersistentVector.create(LazilyPersistentVector.java:30)
-	clojure.lang.LispReader$VectorReader.invoke(LispReader.java:1061)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1126)
-	clojure.lang.LispReader$VectorReader.invoke(LispReader.java:1061)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1126)
-TRACE 300405:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-	clojure.lang.Compiler$InvokeExpr.getJavaClass(Compiler.java:3491)
-	clojure.lang.Compiler$LocalBinding.hasJavaClass(Compiler.java:5493)
-TRACE 300406:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:370)
-	clojure.lang.DynamicClassLoader.findClass(DynamicClassLoader.java:61)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-TRACE 300407:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:414)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300408:
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-	clojure.lang.Compiler$LocalBinding.getJavaClass(Compiler.java:5502)
-	clojure.lang.Compiler$LocalBindingExpr.getJavaClass(Compiler.java:5593)
-	clojure.lang.Compiler$LocalBinding.hasJavaClass(Compiler.java:5493)
-TRACE 300409:
-	java.lang.System.nanoTime(System.java:Unknown line)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:422)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300410:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300411:
-	clojure.asm.commons.GeneratorAdapter.push(GeneratorAdapter.java:400)
-	clojure.lang.Compiler$ObjExpr.emitValue(Compiler.java:4384)
-	clojure.lang.Compiler$ObjExpr.emitConstants(Compiler.java:4526)
-	clojure.lang.Compiler$ObjExpr.compile(Compiler.java:3989)
-	clojure.lang.Compiler$FnExpr.parse(Compiler.java:3732)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6453)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6443)
-TRACE 300412:
-	java.lang.String.intern(String.java:Unknown line)
-	clojure.lang.Symbol.intern(Symbol.java:62)
-	clojure.lang.LispReader.matchSymbol(LispReader.java:351)
-	clojure.lang.LispReader.interpretToken(LispReader.java:317)
-	clojure.lang.LispReader.read(LispReader.java:206)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1135)
-	clojure.lang.LispReader$ListReader.invoke(LispReader.java:962)
-	clojure.lang.LispReader.readDelimitedList(LispReader.java:1126)
-TRACE 300413:
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300414:
-	clojure.asm.Type.getMethodDescriptor(Type.java:543)
-	clojure.asm.commons.Method.<init>(Method.java:97)
-	clojure.lang.Compiler$StaticMethodExpr.emitUnboxed(Compiler.java:1641)
-	clojure.lang.Compiler$LetExpr.doEmit(Compiler.java:5968)
-	clojure.lang.Compiler$LetExpr.emitUnboxed(Compiler.java:5956)
-	clojure.lang.Compiler$IfExpr.doEmit(Compiler.java:2583)
-	clojure.lang.Compiler$IfExpr.emitUnboxed(Compiler.java:2548)
-	clojure.lang.Compiler$BodyExpr.emitUnboxed(Compiler.java:5652)
-TRACE 300415:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-TRACE 300416:
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-	clojure.lang.Compiler$HostExpr.maybeClass(Compiler.java:966)
-	clojure.lang.Compiler$HostExpr.tagToClass(Compiler.java:1004)
-	clojure.lang.Compiler$InvokeExpr.getJavaClass(Compiler.java:3491)
-	clojure.lang.Compiler$LocalBinding.hasJavaClass(Compiler.java:5493)
-	clojure.lang.Compiler$LocalBindingExpr.hasJavaClass(Compiler.java:5587)
-TRACE 300417:
-	java.lang.StringBuilder.append(StringBuilder.java:132)
-	clojure.lang.Compiler$ObjExpr.cachedProtoFnName(Compiler.java:4831)
-	clojure.lang.Compiler$ObjExpr.compile(Compiler.java:4066)
-	clojure.lang.Compiler$FnExpr.parse(Compiler.java:3732)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6453)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6443)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-TRACE 300418:
-	clojure.lang.Util.equiv(Util.java:32)
-	clojure.lang.PersistentArrayMap.equalKey(PersistentArrayMap.java:201)
-	clojure.lang.PersistentArrayMap.indexOf(PersistentArrayMap.java:194)
-	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:177)
-	clojure.lang.PersistentArrayMap.valAt(PersistentArrayMap.java:184)
-	clojure.lang.RT.get(RT.java:634)
-	clojure.lang.Compiler.referenceLocal(Compiler.java:6886)
-	clojure.lang.Compiler.analyzeSymbol(Compiler.java:6647)
-TRACE 300419:
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:356)
-	java.lang.Class.forName0(Class.java:Unknown line)
-	java.lang.Class.forName(Class.java:264)
-	clojure.lang.RT.classForName(RT.java:2039)
-TRACE 300420:
-	java.lang.Class.isPrimitive(Class.java:Unknown line)
-	clojure.asm.Type.getType(Type.java:216)
-	clojure.lang.Compiler$InvokeExpr.emitProto(Compiler.java:3427)
-	clojure.lang.Compiler$InvokeExpr.emit(Compiler.java:3397)
-	clojure.lang.Compiler$LetExpr.doEmit(Compiler.java:5973)
-	clojure.lang.Compiler$LetExpr.emit(Compiler.java:5952)
-	clojure.lang.Compiler$BodyExpr.emit(Compiler.java:5662)
-	clojure.lang.Compiler$FnMethod.doEmit(Compiler.java:5215)
-TRACE 300421:
-	clojure.core$nthrest.invoke(core.clj:2763)
-	clojure.core$partition$fn__4189.invoke(core.clj:2782)
+	clojure.lang.Numbers.bitOpsCast(Numbers.java:1000)
+	clojure.lang.Numbers.shiftRight(Numbers.java:380)
+	clojure.core$shift_mask.invoke(core.clj:5830)
+	clojure.core$maybe_min_hash$fn__4949$fn__4951.invoke(core.clj:5840)
+	clojure.core$map$fn__4087.invoke(core.clj:2434)
 	clojure.lang.LazySeq.sval(LazySeq.java:42)
 	clojure.lang.LazySeq.seq(LazySeq.java:60)
-	clojure.lang.RT.seq(RT.java:473)
-	clojure.core$seq.invoke(core.clj:133)
-	clojure.core$map$fn__4087.invoke(core.clj:2426)
-	clojure.lang.LazySeq.sval(LazySeq.java:42)
-TRACE 300422:
-	clojure.lang.PersistentHashMap.valAt(PersistentHashMap.java:153)
-	clojure.lang.PersistentHashMap.valAt(PersistentHashMap.java:157)
-	clojure.lang.RT.get(RT.java:634)
-	clojure.lang.Compiler.closeOver(Compiler.java:6870)
-	clojure.lang.Compiler.referenceLocal(Compiler.java:6890)
-	clojure.lang.Compiler.analyzeSymbol(Compiler.java:6647)
-	clojure.lang.Compiler.analyze(Compiler.java:6244)
-	clojure.lang.Compiler.analyze(Compiler.java:6223)
-TRACE 300423:
-	java.security.AccessController.doPrivileged(AccessController.java:Unknown line)
-	java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:423)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-	java.lang.ClassLoader.loadClass(ClassLoader.java:410)
-TRACE 300424:
-	clojure.lang.LazySeq.next(LazySeq.java:92)
-	clojure.lang.RT.next(RT.java:587)
-	clojure.core$next.invoke(core.clj:64)
-	clojure.core$parse_impls.invoke(core_deftype.clj:41)
-	clojure.core$parse_opts_PLUS_specs.invoke(core_deftype.clj:47)
-	clojure.core$deftype.doInvoke(core_deftype.clj:438)
-	clojure.lang.RestFn.invoke(RestFn.java:3932)
-	clojure.lang.Var.invoke(Var.java:527)
-TRACE 300426:
-	clojure.lang.Compiler$NewInstanceExpr.build(Compiler.java:7347)
-	clojure.lang.Compiler$NewInstanceExpr$DeftypeParser.parse(Compiler.java:7229)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6455)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyze(Compiler.java:6223)
-	clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5618)
-	clojure.lang.Compiler$LetExpr$Parser.parse(Compiler.java:5919)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6455)
-TRACE 300427:
-	clojure.asm.commons.GeneratorAdapter.arrayStore(GeneratorAdapter.java:622)
-	clojure.lang.Compiler$ObjExpr.emitListAsObjectArray(Compiler.java:4310)
-	clojure.lang.Compiler$ObjExpr.emitValue(Compiler.java:4446)
-	clojure.lang.Compiler$NewInstanceExpr.emitStatics(Compiler.java:7478)
-	clojure.lang.Compiler$ObjExpr.compile(Compiler.java:4232)
-	clojure.lang.Compiler$NewInstanceExpr.build(Compiler.java:7370)
-	clojure.lang.Compiler$NewInstanceExpr$DeftypeParser.parse(Compiler.java:7229)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6455)
-TRACE 300430:
-	clojure.lang.Compiler.tagClass(Compiler.java:7924)
-	clojure.lang.Compiler$NewInstanceMethod.parse(Compiler.java:7724)
-	clojure.lang.Compiler$NewInstanceExpr.build(Compiler.java:7347)
-	clojure.lang.Compiler$NewInstanceExpr$DeftypeParser.parse(Compiler.java:7229)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6455)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.analyze(Compiler.java:6223)
-	clojure.lang.Compiler$BodyExpr$Parser.parse(Compiler.java:5618)
-TRACE 300431:
-	clojure.asm.MethodWriter.visitVarInsn(MethodWriter.java:780)
-	clojure.asm.commons.GeneratorAdapter.loadThis(GeneratorAdapter.java:474)
-	clojure.lang.Compiler$ObjExpr.compile(Compiler.java:4082)
-	clojure.lang.Compiler$FnExpr.parse(Compiler.java:3732)
-	clojure.lang.Compiler.analyzeSeq(Compiler.java:6453)
-	clojure.lang.Compiler.analyze(Compiler.java:6262)
-	clojure.lang.Compiler.eval(Compiler.java:6508)
-	clojure.lang.Compiler.load(Compiler.java:6952)
-TRACE 300433:
-	java.util.Formatter$FormatSpecifier.checkNumeric(Formatter.java:2965)
-	java.util.Formatter$FormatSpecifier.checkInteger(Formatter.java:2934)
-	java.util.Formatter$FormatSpecifier.<init>(Formatter.java:2684)
-	java.util.Formatter.parse(Formatter.java:2528)
-	java.util.Formatter.format(Formatter.java:2469)
-	java.util.Formatter.format(Formatter.java:2423)
-	java.lang.String.format(String.java:2797)
-	clojure.lang.Compiler$ObjExpr.compile(Compiler.java:3937)
-TRACE 300434:
-	java.lang.Class.newInstance0(Class.java:336)
-	java.lang.Class.newInstance(Class.java:325)
-	clojure.lang.Compiler$ObjExpr.eval(Compiler.java:4594)
-	clojure.lang.Compiler$DefExpr.eval(Compiler.java:398)
-	clojure.lang.Compiler.eval(Compiler.java:6516)
-	clojure.lang.Compiler.load(Compiler.java:6952)
-	clojure.lang.RT.loadResourceScript(RT.java:359)
-	clojure.lang.RT.loadResourceScript(RT.java:350)
-TRACE 300435:
-	java.lang.reflect.Method.toString(Method.java:408)
-	clojure.lang.Compiler$StaticMethodExpr.emitUnboxed(Compiler.java:1627)
-	clojure.lang.Compiler$LetExpr.doEmit(Compiler.java:5968)
-	clojure.lang.Compiler$LetExpr.emit(Compiler.java:5952)
-	clojure.lang.Compiler$BodyExpr.emit(Compiler.java:5662)
-	clojure.lang.Compiler$FnMethod.doEmit(Compiler.java:5215)
-	clojure.lang.Compiler$FnMethod.emit(Compiler.java:5069)
-	clojure.lang.Compiler$FnExpr.emitMethods(Compiler.java:3600)
-TRACE 300436:
-	clojure.lang.PersistentHashMap$BitmapIndexedNode.without(PersistentHashMap.java:570)
-	clojure.lang.PersistentHashMap.without(PersistentHashMap.java:171)
-	clojure.lang.RT.dissoc(RT.java:747)
-	clojure.lang.Var$3.invoke(Var.java:546)
-	clojure.lang.AFn.applyToHelper(AFn.java:163)
-	clojure.lang.AFn.applyTo(AFn.java:151)
-	clojure.lang.AReference.alterMeta(AReference.java:31)
-	clojure.lang.Var.bindRoot(Var.java:304)
-TRACE 300437:
-	sun.net.www.protocol.file.Handler.hostsEqual(Handler.java:130)
-	java.net.URLStreamHandler.sameFile(URLStreamHandler.java:413)
-	java.net.URLStreamHandler.equals(URLStreamHandler.java:333)
-	java.net.URL.equals(URL.java:862)
-	java.security.CodeSource.equals(CodeSource.java:152)
-	java.util.HashMap.getEntry(HashMap.java:448)
-	java.util.HashMap.get(HashMap.java:405)
-	java.security.SecureClassLoader.getProtectionDomain(SecureClassLoader.java:204)
-TRACE 300438:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
-TRACE 300439:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:205)
+TRACE 300281:
+	java.lang.Object.getClass(Object.java:Unknown line)
+	clojure.lang.Numbers.ops(Numbers.java:942)
+	clojure.lang.Numbers.isNeg(Numbers.java:98)
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
+	name.stadig.deque$set_prefix.invoke(deque.clj:408)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+TRACE 300282:
+	clojure.lang.RT.object_array(RT.java:1526)
+	name.stadig.deque$array_push.invoke(deque.clj:167)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+TRACE 300284:
+	java.lang.Object.getClass(Object.java:Unknown line)
+	clojure.lang.Numbers.ops(Numbers.java:942)
+	clojure.lang.Numbers.minus(Numbers.java:135)
+	name.stadig.deque$array_slice.invoke(deque.clj:158)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+TRACE 300285:
+	java.lang.Object.getClass(Object.java:Unknown line)
+	clojure.lang.Util.classOf(Util.java:95)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300440:
-	clojure.core$range$fn__4149.invoke(core.clj:2614)
+TRACE 300286:
+	clojure.lang.RT.object_array(RT.java:1526)
+	name.stadig.deque$array_slice.invoke(deque.clj:157)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+TRACE 300287:
+	clojure.lang.ChunkBuffer.add(ChunkBuffer.java:25)
+	clojure.core$chunk_append.invoke(core.clj:632)
+	clojure.core$range$fn__4149.invoke(core.clj:2617)
 	clojure.lang.LazySeq.sval(LazySeq.java:42)
 	clojure.lang.LazySeq.seq(LazySeq.java:60)
 	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
 	clojure.core$chunk_next.invoke(core.clj:644)
 	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-TRACE 300441:
+TRACE 300291:
+	java.lang.System.arraycopy(System.java:Unknown line)
+	name.stadig.deque$array_push.invoke(deque.clj:168)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+TRACE 300292:
 	name.stadig.deque$two_buffer_case.invoke(deque.clj:193)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300443:
-	java.lang.Class.isArray(Class.java:Unknown line)
-	clojure.lang.RT.countFrom(RT.java:542)
-	clojure.lang.RT.count(RT.java:519)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:530)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
-TRACE 300444:
-	java.lang.Class.isArray(Class.java:Unknown line)
-	clojure.lang.RT.countFrom(RT.java:542)
-	clojure.lang.RT.count(RT.java:519)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:530)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300445:
+TRACE 300293:
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:92)
 	name.stadig.deque$set_prefix.invoke(deque.clj:419)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300294:
+	name.stadig.deque$set_prefix.invoke(deque.clj:419)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
 	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
 	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-TRACE 300446:
-	clojure.lang.RT.vector(RT.java:1457)
+TRACE 300295:
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
+	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
+	clojure.core$reduce.invoke(core.clj:6030)
+	clojure.core$into.invoke(core.clj:6078)
+TRACE 300297:
+	name.stadig.deque$set_prefix.invoke(deque.clj:422)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+TRACE 300298:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:226)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300299:
+	name.stadig.deque$set_prefix.invoke(deque.clj:408)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+TRACE 300300:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
+TRACE 300301:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:185)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300304:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:197)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300305:
 	name.stadig.deque$two_buffer_case.invoke(deque.clj:205)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
-TRACE 300447:
-	clojure.lang.RT.vector(RT.java:1457)
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:205)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300306:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300307:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300308:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:197)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
 	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
-TRACE 300451:
-	clojure.lang.Numbers.num(Numbers.java:1625)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
+TRACE 300309:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300310:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:205)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300311:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:193)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300312:
+	clojure.lang.ChunkedCons.chunkedMore(ChunkedCons.java:65)
+	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
+	clojure.core$chunk_next.invoke(core.clj:644)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
+	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
+TRACE 300314:
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+TRACE 300321:
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:91)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
+	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
+	clojure.core$reduce.invoke(core.clj:6030)
+	clojure.core$into.invoke(core.clj:6078)
+	name.stadig.deque$_main.doInvoke(deque.clj:661)
+TRACE 300322:
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:91)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
+	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
+	clojure.core$reduce.invoke(core.clj:6030)
+	clojure.core$into.invoke(core.clj:6078)
+	name.stadig.deque$_main.doInvoke(deque.clj:661)
+TRACE 300327:
+	clojure.lang.Numbers$LongOps.isPos(Numbers.java:422)
+	clojure.lang.Numbers.isPos(Numbers.java:94)
+	clojure.core$range$fn__4149.invoke(core.clj:2612)
+	clojure.lang.LazySeq.sval(LazySeq.java:42)
+	clojure.lang.LazySeq.seq(LazySeq.java:60)
+	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
+	clojure.core$chunk_next.invoke(core.clj:644)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
+TRACE 300328:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300331:
+	name.stadig.deque$array_slice.invoke(deque.clj:158)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300332:
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
+	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
+	clojure.core$reduce.invoke(core.clj:6030)
+	clojure.core$into.invoke(core.clj:6078)
+	name.stadig.deque$_main.doInvoke(deque.clj:661)
+TRACE 300333:
+	name.stadig.deque$persistent_deque.invoke(deque.clj:604)
+	name.stadig.deque$regularize.invoke(deque.clj:333)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300334:
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:90)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
+	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
+	clojure.core$reduce.invoke(core.clj:6030)
+	clojure.core$into.invoke(core.clj:6078)
+	name.stadig.deque$_main.doInvoke(deque.clj:661)
+TRACE 300336:
+	name.stadig.deque$array_slice.invoke(deque.clj:158)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300338:
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
+	name.stadig.deque$set_prefix.invoke(deque.clj:408)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300340:
+	clojure.lang.Util.hash(Util.java:116)
+	name.stadig.deque$compare_color.invoke(deque.clj:42)
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
+	name.stadig.deque$regularize.invoke(deque.clj:327)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+TRACE 300341:
+	name.stadig.deque$array_slice.invoke(deque.clj:158)
 	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
-TRACE 300452:
-	name.stadig.deque$one_buffer_case.invoke(deque.clj:234)
-	name.stadig.deque$regularize.invoke(deque.clj:315)
+TRACE 300342:
+	name.stadig.deque$persistent_deque.invoke(deque.clj:609)
 	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300454:
-	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
-	name.stadig.deque$regularize.invoke(deque.clj:332)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300343:
+	clojure.lang.Util.hash(Util.java:116)
+	name.stadig.deque$compare_color.invoke(deque.clj:51)
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
+	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
+	name.stadig.deque$set_prefix.invoke(deque.clj:419)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+TRACE 300344:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300455:
-	clojure.lang.Numbers.add(Numbers.java:126)
-	clojure.core$range$fn__4149.invoke(core.clj:2618)
+TRACE 300345:
+	name.stadig.deque$array_slice.invoke(deque.clj:158)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+TRACE 300346:
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+TRACE 300349:
+	clojure.lang.RT.object_array(RT.java:1526)
+	name.stadig.deque$array_push.invoke(deque.clj:167)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+TRACE 300350:
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
+TRACE 300353:
+	clojure.core$chunk_cons.invoke(core.clj:647)
+	clojure.core$range$fn__4149.invoke(core.clj:2621)
 	clojure.lang.LazySeq.sval(LazySeq.java:42)
 	clojure.lang.LazySeq.seq(LazySeq.java:60)
 	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
 	clojure.core$chunk_next.invoke(core.clj:644)
 	clojure.core.protocols$fn__5890.invoke(protocols.clj:92)
 	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-TRACE 300458:
+TRACE 300354:
 	clojure.lang.Util.hash(Util.java:116)
 	name.stadig.deque$compare_color.invoke(deque.clj:51)
 	name.stadig.deque$color.invoke(deque.clj:67)
@@ -1907,17 +1489,80 @@ TRACE 300458:
 	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
 	name.stadig.deque$regularize.invoke(deque.clj:332)
 	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-TRACE 300464:
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+TRACE 300355:
+	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
+	clojure.lang.RT.vector(RT.java:1457)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+TRACE 300357:
+	clojure.core$seq.invoke(core.clj:133)
+	clojure.core.protocols$fn__5890.invoke(protocols.clj:90)
+	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
+	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
+	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
+	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
+	clojure.core$reduce.invoke(core.clj:6030)
+	clojure.core$into.invoke(core.clj:6078)
+TRACE 300358:
+	clojure.lang.Util.hash(Util.java:116)
+	name.stadig.deque$compare_color.invoke(deque.clj:42)
 	name.stadig.deque$color.invoke(deque.clj:67)
 	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
-	name.stadig.deque$regularize.invoke(deque.clj:327)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
+	name.stadig.deque$regularize.invoke(deque.clj:332)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+TRACE 300359:
+	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
+	clojure.lang.RT.vector(RT.java:1457)
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:215)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+TRACE 300360:
+	name.stadig.deque$persistent_deque.invoke(deque.clj:609)
+	name.stadig.deque$regularize.invoke(deque.clj:343)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
-TRACE 300465:
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300361:
+	name.stadig.deque$persistent_deque.invoke(deque.clj:609)
+	name.stadig.deque$regularize.invoke(deque.clj:336)
+	name.stadig.deque$set_prefix.invoke(deque.clj:431)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300362:
+	name.stadig.deque$two_buffer_case.invoke(deque.clj:215)
+	name.stadig.deque$regularize.invoke(deque.clj:311)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
+	clojure.lang.RT.conj(RT.java:551)
+	clojure.core$conj.invoke(core.clj:83)
+	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
+TRACE 300363:
+	clojure.lang.Util.hash(Util.java:116)
+	name.stadig.deque$compare_color.invoke(deque.clj:42)
+	name.stadig.deque$color.invoke(deque.clj:67)
+	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
+	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
+	name.stadig.deque$regularize.invoke(deque.clj:332)
+	name.stadig.deque$set_prefix.invoke(deque.clj:425)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
+TRACE 300364:
 	java.lang.Long.valueOf(Long.java:577)
 	clojure.lang.Numbers.num(Numbers.java:1625)
 	clojure.lang.Numbers$LongOps.add(Numbers.java:430)
@@ -1926,600 +1571,201 @@ TRACE 300465:
 	clojure.lang.LazySeq.sval(LazySeq.java:42)
 	clojure.lang.LazySeq.seq(LazySeq.java:60)
 	clojure.lang.ChunkedCons.chunkedNext(ChunkedCons.java:59)
-TRACE 300466:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:42)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
-	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
-	name.stadig.deque$regularize.invoke(deque.clj:332)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-TRACE 300467:
-	name.stadig.deque$regularize.invoke(deque.clj:308)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300468:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300470:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:90)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300471:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:197)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300474:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:51)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
-	name.stadig.deque$regularize.invoke(deque.clj:327)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-TRACE 300475:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:51)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
-	name.stadig.deque$red_QMARK_.invoke(deque.clj:95)
-	name.stadig.deque$set_prefix.invoke(deque.clj:419)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-TRACE 300478:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300480:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300483:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300486:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300487:
-	name.stadig.deque$regularize.invoke(deque.clj:308)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300489:
-	name.stadig.deque$regularize.invoke(deque.clj:327)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300491:
-	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
-	clojure.lang.RT.vector(RT.java:1457)
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-TRACE 300492:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:91)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300493:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300494:
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-TRACE 300495:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300496:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
-TRACE 300498:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300499:
-	name.stadig.deque$regularize.invoke(deque.clj:327)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300502:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300503:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300504:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:198)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:58)
-TRACE 300505:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:42)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
-	name.stadig.deque$child_yellow_QMARK_.invoke(deque.clj:106)
-	name.stadig.deque$regularize.invoke(deque.clj:332)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-TRACE 300506:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:42)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$yellow_QMARK_.invoke(deque.clj:88)
-	name.stadig.deque$regularize.invoke(deque.clj:327)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-TRACE 300507:
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:416)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-TRACE 300508:
-	clojure.core.protocols$fn__5890.invoke(protocols.clj:94)
-	clojure.core.protocols$fn__5854$G__5849__5863.invoke(protocols.clj:19)
-	clojure.core.protocols$seq_reduce.invoke(protocols.clj:31)
-	clojure.core.protocols$fn__5875.invoke(protocols.clj:54)
-	clojure.core.protocols$fn__5828$G__5823__5841.invoke(protocols.clj:13)
-	clojure.core$reduce.invoke(core.clj:6030)
-	clojure.core$into.invoke(core.clj:6078)
-	name.stadig.test.deque$_main.doInvoke(deque.clj:66)
-TRACE 300509:
-	clojure.lang.Util.hash(Util.java:116)
-	name.stadig.deque$compare_color.invoke(deque.clj:42)
-	name.stadig.deque$color.invoke(deque.clj:67)
-	name.stadig.deque$red_QMARK_.invoke(deque.clj:97)
-	name.stadig.deque$set_prefix.invoke(deque.clj:428)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-TRACE 300510:
+TRACE 300365:
 	clojure.lang.RT.object_array(RT.java:1526)
 	name.stadig.deque$array_slice.invoke(deque.clj:157)
 	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
-TRACE 300511:
-	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
-	clojure.lang.RT.vector(RT.java:1457)
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:215)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-TRACE 300512:
-	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
-	clojure.lang.RT.vector(RT.java:1457)
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:199)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-TRACE 300513:
-	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
-	clojure.lang.RT.vector(RT.java:1457)
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:193)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-TRACE 300514:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:226)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+TRACE 300366:
+	name.stadig.deque$persistent_deque.invoke(deque.clj:609)
+	name.stadig.deque$regularize.invoke(deque.clj:336)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
 	clojure.core$conj.invoke(core.clj:83)
 	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300515:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:187)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300516:
+TRACE 300367:
 	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
 	clojure.lang.RT.vector(RT.java:1457)
 	name.stadig.deque$two_buffer_case.invoke(deque.clj:184)
 	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
+	name.stadig.deque$set_prefix.invoke(deque.clj:416)
+	name.stadig.deque.PersistentDeque.cons(deque.clj:548)
 	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
 	clojure.lang.RT.conj(RT.java:551)
-TRACE 300517:
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:197)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:431)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-	clojure.core$conj.invoke(core.clj:83)
-	clojure.lang.ArrayChunk.reduce(ArrayChunk.java:60)
-TRACE 300518:
-	clojure.lang.LazilyPersistentVector.createOwning(LazilyPersistentVector.java:24)
-	clojure.lang.RT.vector(RT.java:1457)
-	name.stadig.deque$two_buffer_case.invoke(deque.clj:226)
-	name.stadig.deque$regularize.invoke(deque.clj:311)
-	name.stadig.deque$set_prefix.invoke(deque.clj:425)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:534)
-	name.stadig.deque.PersistentDeque.cons(deque.clj:Unknown line)
-	clojure.lang.RT.conj(RT.java:551)
-TRACE 300521:
-	sun.nio.cs.UTF_8$Encoder.encodeArrayLoop(UTF_8.java:523)
-	sun.nio.cs.UTF_8$Encoder.encodeLoop(UTF_8.java:619)
-	java.nio.charset.CharsetEncoder.encode(CharsetEncoder.java:561)
-	sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:271)
-	sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
-	java.io.OutputStreamWriter.write(OutputStreamWriter.java:207)
-	java.io.BufferedWriter.flushBuffer(BufferedWriter.java:129)
-	java.io.PrintStream.write(PrintStream.java:526)
-CPU SAMPLES BEGIN (total = 433) Sat Jan 12 16:54:01 2013
+CPU SAMPLES BEGIN (total = 276) Sun Jan 13 05:31:28 2013
 rank   self  accum   count trace method
-   1  7.85%  7.85%      34 300453 clojure.lang.Util.hash
-   2  4.85% 12.70%      21 300055 java.lang.ClassLoader.defineClass1
-   3  4.62% 17.32%      20 300355 java.lang.Throwable.fillInStackTrace
-   4  2.77% 20.09%      12 300101 java.io.UnixFileSystem.getBooleanAttributes0
-   5  2.54% 22.63%      11 300369 java.lang.Throwable.fillInStackTrace
-   6  2.08% 24.71%       9 300463 name.stadig.deque$two_buffer_case.invoke
-   7  1.62% 26.33%       7 300291 java.lang.Throwable.fillInStackTrace
-   8  1.62% 27.94%       7 300448 clojure.lang.Util.hash
-   9  1.62% 29.56%       7 300459 clojure.core.protocols$fn__5890.invoke
-  10  1.15% 30.72%       5 300365 java.net.URLClassLoader.findClass
-  11  1.15% 31.87%       5 300384 java.lang.Object.clone
-  12  0.92% 32.79%       4 300100 java.util.zip.Inflater.inflateBytes
-  13  0.92% 33.72%       4 300151 java.lang.Class.forName0
-  14  0.92% 34.64%       4 300367 java.net.URLClassLoader$1.run
-  15  0.92% 35.57%       4 300386 java.net.URLClassLoader.findClass
-  16  0.92% 36.49%       4 300394 java.lang.ClassLoader.loadClass
-  17  0.92% 37.41%       4 300450 clojure.lang.Util.hash
-  18  0.92% 38.34%       4 300456 name.stadig.deque$two_buffer_case.invoke
-  19  0.92% 39.26%       4 300476 name.stadig.deque$two_buffer_case.invoke
-  20  0.69% 39.95%       3 300356 java.lang.ClassLoader.loadClass
-  21  0.69% 40.65%       3 300363 java.net.URLClassLoader.findClass
-  22  0.69% 41.34%       3 300396 java.net.URLClassLoader.findClass
-  23  0.69% 42.03%       3 300460 clojure.core.protocols$fn__5890.invoke
-  24  0.69% 42.73%       3 300462 name.stadig.deque$two_buffer_case.invoke
-  25  0.69% 43.42%       3 300477 clojure.core.protocols$fn__5890.invoke
-  26  0.69% 44.11%       3 300479 name.stadig.deque$regularize.invoke
-  27  0.69% 44.80%       3 300481 name.stadig.deque$red_QMARK_.invoke
-  28  0.46% 45.27%       2 300370 java.util.zip.ZipFile.getEntry
-  29  0.46% 45.73%       2 300375 java.lang.ClassLoader.loadClass
-  30  0.46% 46.19%       2 300377 java.net.URLClassLoader$1.run
-  31  0.46% 46.65%       2 300378 java.net.URLClassLoader$1.run
-  32  0.46% 47.11%       2 300380 java.lang.ClassLoader.loadClass
-  33  0.46% 47.58%       2 300391 java.net.URLClassLoader.findClass
-  34  0.46% 48.04%       2 300399 java.security.AccessController.doPrivileged
-  35  0.46% 48.50%       2 300400 java.lang.ClassLoader.loadClass
-  36  0.46% 48.96%       2 300442 name.stadig.deque$two_buffer_case.invoke
-  37  0.46% 49.42%       2 300449 name.stadig.deque$regularize.invoke
-  38  0.46% 49.88%       2 300457 name.stadig.deque$two_buffer_case.invoke
-  39  0.46% 50.35%       2 300461 name.stadig.deque$set_prefix.invoke
-  40  0.46% 50.81%       2 300469 clojure.lang.Util.hash
-  41  0.46% 51.27%       2 300472 clojure.core.protocols$fn__5890.invoke
-  42  0.46% 51.73%       2 300473 name.stadig.deque$two_buffer_case.invoke
-  43  0.46% 52.19%       2 300482 name.stadig.deque$set_prefix.invoke
-  44  0.46% 52.66%       2 300484 name.stadig.deque$color.invoke
-  45  0.46% 53.12%       2 300485 name.stadig.deque$child_yellow_QMARK_.invoke
-  46  0.46% 53.58%       2 300488 clojure.core.protocols$fn__5890.invoke
-  47  0.46% 54.04%       2 300490 clojure.lang.Util.hash
-  48  0.46% 54.50%       2 300497 clojure.lang.LazilyPersistentVector.createOwning
-  49  0.46% 54.97%       2 300500 clojure.lang.RT.count
-  50  0.46% 55.43%       2 300501 name.stadig.deque$regularize.invoke
-  51  0.23% 55.66%       1 300026 java.util.zip.ZipFile.open
-  52  0.23% 55.89%       1 300059 java.lang.ref.ReferenceQueue.poll
-  53  0.23% 56.12%       1 300098 java.lang.ClassLoader.loadClass
-  54  0.23% 56.35%       1 300103 clojure.lang.PersistentList.<clinit>
-  55  0.23% 56.58%       1 300107 clojure.lang.RT.baseLoader
-  56  0.23% 56.81%       1 300113 java.security.AccessController.doPrivileged
-  57  0.23% 57.04%       1 300140 java.net.URI.<init>
-  58  0.23% 57.27%       1 300154 clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc
-  59  0.23% 57.51%       1 300156 java.lang.String.intern
-  60  0.23% 57.74%       1 300157 java.math.BigInteger.<clinit>
-  61  0.23% 57.97%       1 300159 java.lang.String.intern
-  62  0.23% 58.20%       1 300163 clojure.core__init.__init17
-  63  0.23% 58.43%       1 300164 clojure.core__init.__init20
-  64  0.23% 58.66%       1 300165 clojure.core__init.__init21
-  65  0.23% 58.89%       1 300166 java.security.AccessController.doPrivileged
-  66  0.23% 59.12%       1 300167 java.lang.System.nanoTime
-  67  0.23% 59.35%       1 300168 java.lang.System.nanoTime
-  68  0.23% 59.58%       1 300169 clojure.core__init.load
-  69  0.23% 59.82%       1 300170 java.lang.ClassLoader.loadClass
-  70  0.23% 60.05%       1 300171 clojure.core__init.load
-  71  0.23% 60.28%       1 300172 clojure.core__init.load
-  72  0.23% 60.51%       1 300173 clojure.core$iterate.<clinit>
-  73  0.23% 60.74%       1 300174 clojure.core$prn.<clinit>
-  74  0.23% 60.97%       1 300175 java.lang.ClassLoader.loadClass
-  75  0.23% 61.20%       1 300176 clojure.core$with_out_str.<clinit>
-  76  0.23% 61.43%       1 300177 clojure.core$xml_seq.<clinit>
-  77  0.23% 61.66%       1 300178 java.net.URLClassLoader$1.run
-  78  0.23% 61.89%       1 300179 java.lang.ClassLoader.addClass
-  79  0.23% 62.12%       1 300180 clojure.core__init.load
-  80  0.23% 62.36%       1 300186 clojure.core$fn__4810.<clinit>
-  81  0.23% 62.59%       1 300187 clojure.core__init.load
-  82  0.23% 62.82%       1 300188 java.lang.ClassLoader.findLoadedClass0
-  83  0.23% 63.05%       1 300189 clojure.core__init.load
-  84  0.23% 63.28%       1 300190 java.util.zip.ZipFile.read
-  85  0.23% 63.51%       1 300191 clojure.core_print__init.load
-  86  0.23% 63.74%       1 300192 clojure.genclass__init.load
-  87  0.23% 63.97%       1 300193 java.lang.Object.clone
-  88  0.23% 64.20%       1 300194 clojure.core$find_protocol_method.<clinit>
-  89  0.23% 64.43%       1 300195 clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc
-  90  0.23% 64.67%       1 300196 java.lang.Object.clone
-  91  0.23% 64.90%       1 300197 java.lang.ClassLoader.loadClass
-  92  0.23% 65.13%       1 300198 clojure.lang.PersistentArrayMap.valAt
-  93  0.23% 65.36%       1 300199 java.lang.Object.clone
-  94  0.23% 65.59%       1 300214 clojure.uuid$loading__4784__auto__.invoke
-  95  0.23% 65.82%       1 300215 clojure.core__init.load
-  96  0.23% 66.05%       1 300216 java.lang.Object.clone
-  97  0.23% 66.28%       1 300217 java.lang.Object.clone
-  98  0.23% 66.51%       1 300221 java.util.TreeMap.put
-  99  0.23% 66.74%       1 300236 java.lang.ClassLoader.loadClass
- 100  0.23% 66.97%       1 300237 clojure.java.io__init.load
- 101  0.23% 67.21%       1 300238 clojure.java.io__init.load
- 102  0.23% 67.44%       1 300239 java.lang.Object.<init>
- 103  0.23% 67.67%       1 300249 clojure.lang.RT.first
- 104  0.23% 67.90%       1 300257 clojure.core$expand_method_impl_cache.invoke
- 105  0.23% 68.13%       1 300258 java.lang.Object.clone
- 106  0.23% 68.36%       1 300259 java.lang.Object.getClass
- 107  0.23% 68.59%       1 300260 clojure.main__init.load
- 108  0.23% 68.82%       1 300262 java.util.regex.Pattern.intersection
- 109  0.23% 69.05%       1 300264 clojure.lang.PersistentList.create
- 110  0.23% 69.28%       1 300267 clojure.lang.Compiler$TryExpr$Parser.parse
- 111  0.23% 69.52%       1 300275 clojure.asm.MethodWriter.getSize
- 112  0.23% 69.75%       1 300276 java.lang.ClassLoader.defineClass1
- 113  0.23% 69.98%       1 300280 clojure.lang.RT.get
- 114  0.23% 70.21%       1 300282 clojure.lang.PersistentHashMap$ArrayNode.find
- 115  0.23% 70.44%       1 300283 clojure.test__init.load
- 116  0.23% 70.67%       1 300284 java.lang.Object.hashCode
- 117  0.23% 70.90%       1 300285 clojure.walk__init.load
- 118  0.23% 71.13%       1 300286 java.net.URLClassLoader.findClass
- 119  0.23% 71.36%       1 300288 clojure.test__init.load
- 120  0.23% 71.59%       1 300292 java.lang.ClassLoader.findBootstrapClass
- 121  0.23% 71.82%       1 300299 sun.net.www.protocol.file.FileURLConnection.initializeHeaders
- 122  0.23% 72.06%       1 300334 java.lang.System.arraycopy
- 123  0.23% 72.29%       1 300342 clojure.lang.Var.getThreadBinding
- 124  0.23% 72.52%       1 300343 clojure.core$refer.doInvoke
- 125  0.23% 72.75%       1 300344 clojure.core$filter_key.invoke
- 126  0.23% 72.98%       1 300345 clojure.core$meta.invoke
- 127  0.23% 73.21%       1 300346 java.lang.ClassLoader.findBootstrapClass
- 128  0.23% 73.44%       1 300347 java.util.ArrayList$Itr.checkForComodification
- 129  0.23% 73.67%       1 300352 clojure.lang.Numbers$LongOps.combine
- 130  0.23% 73.90%       1 300353 clojure.lang.RestFn.applyTo
- 131  0.23% 74.13%       1 300354 clojure.lang.AFn.applyToHelper
- 132  0.23% 74.36%       1 300357 clojure.asm.Type.getType
- 133  0.23% 74.60%       1 300358 java.lang.Class.getName
- 134  0.23% 74.83%       1 300359 clojure.lang.Compiler$ObjExpr.emitLocal
- 135  0.23% 75.06%       1 300360 clojure.lang.RT.map
- 136  0.23% 75.29%       1 300361 java.lang.System.identityHashCode
- 137  0.23% 75.52%       1 300364 clojure.lang.PersistentVector$ChunkedSeq.<init>
- 138  0.23% 75.75%       1 300366 clojure.lang.LispReader.read1
- 139  0.23% 75.98%       1 300368 java.lang.Class.getComponentType
- 140  0.23% 76.21%       1 300371 java.net.URLClassLoader.findClass
- 141  0.23% 76.44%       1 300376 clojure.lang.RT.classForName
- 142  0.23% 76.67%       1 300379 java.security.AccessController.doPrivileged
- 143  0.23% 76.91%       1 300381 clojure.lang.Util.sneakyThrow0
- 144  0.23% 77.14%       1 300382 java.security.AccessController.doPrivileged
- 145  0.23% 77.37%       1 300383 java.lang.Class.isArray
- 146  0.23% 77.60%       1 300385 clojure.core$conj.invoke
- 147  0.23% 77.83%       1 300387 java.net.URLClassLoader.findClass
- 148  0.23% 78.06%       1 300388 sun.misc.Launcher$AppClassLoader.loadClass
- 149  0.23% 78.29%       1 300389 java.net.URLClassLoader.findClass
- 150  0.23% 78.52%       1 300390 java.net.URLClassLoader$1.run
- 151  0.23% 78.75%       1 300392 java.lang.ClassLoader.loadClass
- 152  0.23% 78.98%       1 300393 java.security.AccessController.doPrivileged
- 153  0.23% 79.21%       1 300395 java.lang.ClassLoader.loadClass
- 154  0.23% 79.45%       1 300397 java.lang.ClassLoader.loadClass
- 155  0.23% 79.68%       1 300398 clojure.lang.PersistentHashMap.valAt
- 156  0.23% 79.91%       1 300401 java.lang.ClassLoader.loadClass
- 157  0.23% 80.14%       1 300402 java.lang.ClassLoader.loadClass
- 158  0.23% 80.37%       1 300403 clojure.lang.Compiler$LocalBindingExpr.<init>
- 159  0.23% 80.60%       1 300404 java.lang.Object.getClass
- 160  0.23% 80.83%       1 300405 java.lang.ClassLoader.loadClass
- 161  0.23% 81.06%       1 300406 java.net.URLClassLoader.findClass
- 162  0.23% 81.29%       1 300407 java.lang.ClassLoader.loadClass
- 163  0.23% 81.52%       1 300408 java.lang.Class.forName0
- 164  0.23% 81.76%       1 300409 java.lang.System.nanoTime
- 165  0.23% 81.99%       1 300410 java.security.AccessController.doPrivileged
- 166  0.23% 82.22%       1 300411 clojure.asm.commons.GeneratorAdapter.push
- 167  0.23% 82.45%       1 300412 java.lang.String.intern
- 168  0.23% 82.68%       1 300413 java.net.URLClassLoader.findClass
- 169  0.23% 82.91%       1 300414 clojure.asm.Type.getMethodDescriptor
- 170  0.23% 83.14%       1 300415 java.lang.ClassLoader.loadClass
- 171  0.23% 83.37%       1 300416 java.lang.Class.forName0
- 172  0.23% 83.60%       1 300417 java.lang.StringBuilder.append
- 173  0.23% 83.83%       1 300418 clojure.lang.Util.equiv
- 174  0.23% 84.06%       1 300419 java.lang.ClassLoader.loadClass
- 175  0.23% 84.30%       1 300420 java.lang.Class.isPrimitive
- 176  0.23% 84.53%       1 300421 clojure.core$nthrest.invoke
- 177  0.23% 84.76%       1 300422 clojure.lang.PersistentHashMap.valAt
- 178  0.23% 84.99%       1 300423 java.security.AccessController.doPrivileged
- 179  0.23% 85.22%       1 300424 clojure.lang.LazySeq.next
- 180  0.23% 85.45%       1 300426 clojure.lang.Compiler$NewInstanceExpr.build
- 181  0.23% 85.68%       1 300427 clojure.asm.commons.GeneratorAdapter.arrayStore
- 182  0.23% 85.91%       1 300430 clojure.lang.Compiler.tagClass
- 183  0.23% 86.14%       1 300431 clojure.asm.MethodWriter.visitVarInsn
- 184  0.23% 86.37%       1 300433 java.util.Formatter$FormatSpecifier.checkNumeric
- 185  0.23% 86.61%       1 300434 java.lang.Class.newInstance0
- 186  0.23% 86.84%       1 300435 java.lang.reflect.Method.toString
- 187  0.23% 87.07%       1 300436 clojure.lang.PersistentHashMap$BitmapIndexedNode.without
- 188  0.23% 87.30%       1 300437 sun.net.www.protocol.file.Handler.hostsEqual
- 189  0.23% 87.53%       1 300438 name.stadig.deque$two_buffer_case.invoke
- 190  0.23% 87.76%       1 300439 name.stadig.deque$two_buffer_case.invoke
- 191  0.23% 87.99%       1 300440 clojure.core$range$fn__4149.invoke
- 192  0.23% 88.22%       1 300441 name.stadig.deque$two_buffer_case.invoke
- 193  0.23% 88.45%       1 300443 java.lang.Class.isArray
- 194  0.23% 88.68%       1 300444 java.lang.Class.isArray
- 195  0.23% 88.91%       1 300445 name.stadig.deque$set_prefix.invoke
- 196  0.23% 89.15%       1 300446 clojure.lang.RT.vector
- 197  0.23% 89.38%       1 300447 clojure.lang.RT.vector
- 198  0.23% 89.61%       1 300451 clojure.lang.Numbers.num
- 199  0.23% 89.84%       1 300452 name.stadig.deque$one_buffer_case.invoke
- 200  0.23% 90.07%       1 300454 name.stadig.deque$child_yellow_QMARK_.invoke
- 201  0.23% 90.30%       1 300455 clojure.lang.Numbers.add
- 202  0.23% 90.53%       1 300458 clojure.lang.Util.hash
- 203  0.23% 90.76%       1 300464 name.stadig.deque$color.invoke
- 204  0.23% 90.99%       1 300465 java.lang.Long.valueOf
- 205  0.23% 91.22%       1 300466 clojure.lang.Util.hash
- 206  0.23% 91.45%       1 300467 name.stadig.deque$regularize.invoke
- 207  0.23% 91.69%       1 300468 name.stadig.deque$two_buffer_case.invoke
- 208  0.23% 91.92%       1 300470 clojure.core.protocols$fn__5890.invoke
- 209  0.23% 92.15%       1 300471 name.stadig.deque$two_buffer_case.invoke
- 210  0.23% 92.38%       1 300474 clojure.lang.Util.hash
- 211  0.23% 92.61%       1 300475 clojure.lang.Util.hash
- 212  0.23% 92.84%       1 300478 name.stadig.deque$two_buffer_case.invoke
- 213  0.23% 93.07%       1 300480 name.stadig.deque$two_buffer_case.invoke
- 214  0.23% 93.30%       1 300483 name.stadig.deque$two_buffer_case.invoke
- 215  0.23% 93.53%       1 300486 clojure.core.protocols$fn__5890.invoke
- 216  0.23% 93.76%       1 300487 name.stadig.deque$regularize.invoke
- 217  0.23% 94.00%       1 300489 name.stadig.deque$regularize.invoke
- 218  0.23% 94.23%       1 300491 clojure.lang.LazilyPersistentVector.createOwning
- 219  0.23% 94.46%       1 300492 clojure.core.protocols$fn__5890.invoke
- 220  0.23% 94.69%       1 300493 name.stadig.deque$two_buffer_case.invoke
- 221  0.23% 94.92%       1 300494 name.stadig.deque.PersistentDeque.cons
- 222  0.23% 95.15%       1 300495 name.stadig.deque$two_buffer_case.invoke
- 223  0.23% 95.38%       1 300496 name.stadig.deque$two_buffer_case.invoke
- 224  0.23% 95.61%       1 300498 name.stadig.deque$two_buffer_case.invoke
- 225  0.23% 95.84%       1 300499 name.stadig.deque$regularize.invoke
- 226  0.23% 96.07%       1 300502 clojure.core.protocols$fn__5890.invoke
- 227  0.23% 96.30%       1 300503 name.stadig.deque$two_buffer_case.invoke
- 228  0.23% 96.54%       1 300504 name.stadig.deque$two_buffer_case.invoke
- 229  0.23% 96.77%       1 300505 clojure.lang.Util.hash
- 230  0.23% 97.00%       1 300506 clojure.lang.Util.hash
- 231  0.23% 97.23%       1 300507 name.stadig.deque$regularize.invoke
- 232  0.23% 97.46%       1 300508 clojure.core.protocols$fn__5890.invoke
- 233  0.23% 97.69%       1 300509 clojure.lang.Util.hash
- 234  0.23% 97.92%       1 300510 clojure.lang.RT.object_array
- 235  0.23% 98.15%       1 300511 clojure.lang.LazilyPersistentVector.createOwning
- 236  0.23% 98.38%       1 300512 clojure.lang.LazilyPersistentVector.createOwning
- 237  0.23% 98.61%       1 300513 clojure.lang.LazilyPersistentVector.createOwning
- 238  0.23% 98.85%       1 300514 name.stadig.deque$two_buffer_case.invoke
- 239  0.23% 99.08%       1 300515 name.stadig.deque$two_buffer_case.invoke
- 240  0.23% 99.31%       1 300516 clojure.lang.LazilyPersistentVector.createOwning
- 241  0.23% 99.54%       1 300517 name.stadig.deque$two_buffer_case.invoke
- 242  0.23% 99.77%       1 300518 clojure.lang.LazilyPersistentVector.createOwning
- 243  0.23% 100.00%       1 300521 sun.nio.cs.UTF_8$Encoder.encodeArrayLoop
+   1  5.80%  5.80%      16 300041 java.lang.ClassLoader.defineClass1
+   2  5.43% 11.23%      15 300315 clojure.lang.Util.hash
+   3  3.62% 14.86%      10 300324 name.stadig.deque$array_slice.invoke
+   4  2.90% 17.75%       8 300313 name.stadig.deque$array_slice.invoke
+   5  2.17% 19.93%       6 300290 name.stadig.deque$two_buffer_case.invoke
+   6  2.17% 22.10%       6 300320 name.stadig.deque$array_slice.invoke
+   7  2.17% 24.28%       6 300335 clojure.lang.Util.hash
+   8  2.17% 26.45%       6 300339 clojure.core$range$fn__4149.invoke
+   9  1.81% 28.26%       5 300288 clojure.lang.RT.object_array
+  10  1.81% 30.07%       5 300296 name.stadig.deque$two_buffer_case.invoke
+  11  1.45% 31.52%       4 300153 java.lang.Class.forName0
+  12  1.45% 32.97%       4 300316 clojure.lang.Util.hash
+  13  1.09% 34.06%       3 300059 java.lang.String.toCharArray
+  14  1.09% 35.14%       3 300283 name.stadig.deque$two_buffer_case.invoke
+  15  1.09% 36.23%       3 300317 name.stadig.deque$regularize.invoke
+  16  1.09% 37.32%       3 300318 name.stadig.deque$set_prefix.invoke
+  17  1.09% 38.41%       3 300319 name.stadig.deque$array_slice.invoke
+  18  1.09% 39.49%       3 300325 clojure.lang.Util.hash
+  19  1.09% 40.58%       3 300337 name.stadig.deque$regularize.invoke
+  20  1.09% 41.67%       3 300351 clojure.core$chunk_buffer.invoke
+  21  1.09% 42.75%       3 300356 name.stadig.deque$array_slice.invoke
+  22  0.72% 43.48%       2 300171 java.util.zip.Inflater.inflateBytes
+  23  0.72% 44.20%       2 300289 java.lang.System.arraycopy
+  24  0.72% 44.93%       2 300302 name.stadig.deque$two_buffer_case.invoke
+  25  0.72% 45.65%       2 300303 name.stadig.deque$two_buffer_case.invoke
+  26  0.72% 46.38%       2 300323 name.stadig.deque$color.invoke
+  27  0.72% 47.10%       2 300326 clojure.lang.Util.hash
+  28  0.72% 47.83%       2 300329 name.stadig.deque$two_buffer_case.invoke
+  29  0.72% 48.55%       2 300330 clojure.lang.Util.hash
+  30  0.72% 49.28%       2 300347 name.stadig.deque$color.invoke
+  31  0.72% 50.00%       2 300348 name.stadig.deque$two_buffer_case.invoke
+  32  0.72% 50.72%       2 300352 name.stadig.deque$regularize.invoke
+  33  0.36% 51.09%       1 300032 java.security.SecureClassLoader.getPermissions
+  34  0.36% 51.45%       1 300061 name.stadig.deque.<clinit>
+  35  0.36% 51.81%       1 300062 java.lang.String.substring
+  36  0.36% 52.17%       1 300064 java.lang.ClassLoader.findBootstrapClass
+  37  0.36% 52.54%       1 300090 java.lang.ClassLoader.findBootstrapClass
+  38  0.36% 52.90%       1 300103 clojure.lang.RT.list
+  39  0.36% 53.26%       1 300104 clojure.lang.PersistentList.<clinit>
+  40  0.36% 53.62%       1 300108 java.lang.String.toCharArray
+  41  0.36% 53.99%       1 300109 java.lang.ClassLoader.findBootstrapClass
+  42  0.36% 54.35%       1 300118 java.lang.System.arraycopy
+  43  0.36% 54.71%       1 300152 java.lang.CharacterDataLatin1.toLowerCase
+  44  0.36% 55.07%       1 300156 sun.misc.Unsafe.getObject
+  45  0.36% 55.43%       1 300158 java.lang.String.intern
+  46  0.36% 55.80%       1 300159 clojure.core__init.__init8
+  47  0.36% 56.16%       1 300160 java.math.BigInteger.<clinit>
+  48  0.36% 56.52%       1 300162 clojure.core__init.__init13
+  49  0.36% 56.88%       1 300166 clojure.core__init.__init15
+  50  0.36% 57.25%       1 300167 sun.misc.Unsafe.getObjectVolatile
+  51  0.36% 57.61%       1 300168 clojure.core__init.__init20
+  52  0.36% 57.97%       1 300169 java.lang.Class.forName0
+  53  0.36% 58.33%       1 300170 java.lang.String.intern
+  54  0.36% 58.70%       1 300172 clojure.core__init.load
+  55  0.36% 59.06%       1 300173 clojure.core__init.load
+  56  0.36% 59.42%       1 300174 java.lang.System.arraycopy
+  57  0.36% 59.78%       1 300175 clojure.core__init.load
+  58  0.36% 60.14%       1 300176 java.lang.Thread.currentThread
+  59  0.36% 60.51%       1 300177 clojure.core__init.load
+  60  0.36% 60.87%       1 300178 java.security.AccessController.doPrivileged
+  61  0.36% 61.23%       1 300179 java.lang.StringCoding$StringEncoder.encode
+  62  0.36% 61.59%       1 300180 java.util.Arrays.copyOfRange
+  63  0.36% 61.96%       1 300181 clojure.core__init.load
+  64  0.36% 62.32%       1 300182 clojure.core__init.load
+  65  0.36% 62.68%       1 300183 java.lang.ClassLoader.findBootstrapClass
+  66  0.36% 63.04%       1 300184 java.lang.AbstractStringBuilder.<init>
+  67  0.36% 63.41%       1 300185 clojure.core$print_str.<clinit>
+  68  0.36% 63.77%       1 300186 clojure.core__init.load
+  69  0.36% 64.13%       1 300187 java.util.zip.ZipCoder.getBytes
+  70  0.36% 64.49%       1 300188 clojure.core__init.load
+  71  0.36% 64.86%       1 300189 java.util.zip.ZipFile.getEntry
+  72  0.36% 65.22%       1 300195 clojure.core__init.load
+  73  0.36% 65.58%       1 300196 clojure.core__init.load
+  74  0.36% 65.94%       1 300197 java.lang.ClassLoader.findBootstrapClass
+  75  0.36% 66.30%       1 300198 clojure.core_proxy__init.load
+  76  0.36% 66.67%       1 300199 java.lang.Object.hashCode
+  77  0.36% 67.03%       1 300200 clojure.genclass__init.load
+  78  0.36% 67.39%       1 300201 java.lang.Object.clone
+  79  0.36% 67.75%       1 300202 java.util.zip.ZipFile.getEntry
+  80  0.36% 68.12%       1 300203 clojure.core$emit_impl.<clinit>
+  81  0.36% 68.48%       1 300204 java.lang.System.nanoTime
+  82  0.36% 68.84%       1 300205 clojure.core$refer.doInvoke
+  83  0.36% 69.20%       1 300206 clojure.lang.PersistentHashMap$NodeSeq.first
+  84  0.36% 69.57%       1 300207 clojure.lang.Util.equiv
+  85  0.36% 69.93%       1 300208 sun.misc.Unsafe.getObject
+  86  0.36% 70.29%       1 300209 clojure.lang.PersistentHashMap$BitmapIndexedNode.assoc
+  87  0.36% 70.65%       1 300210 clojure.lang.PersistentHashMap$BitmapIndexedNode.find
+  88  0.36% 71.01%       1 300211 clojure.instant__init.load
+  89  0.36% 71.38%       1 300226 clojure.lang.PersistentArrayMap.indexOf
+  90  0.36% 71.74%       1 300227 clojure.lang.PersistentArrayMap.indexOf
+  91  0.36% 72.10%       1 300228 sun.misc.Unsafe.getObject
+  92  0.36% 72.46%       1 300229 java.lang.String.intern
+  93  0.36% 72.83%       1 300230 java.util.concurrent.atomic.AtomicBoolean.get
+  94  0.36% 73.19%       1 300231 java.lang.CharacterDataLatin1.toLowerCase
+  95  0.36% 73.55%       1 300232 java.lang.Object.clone
+  96  0.36% 73.91%       1 300233 java.lang.AbstractStringBuilder.<init>
+  97  0.36% 74.28%       1 300235 clojure.lang.LockingTransaction.run
+  98  0.36% 74.64%       1 300253 java.lang.AbstractStringBuilder.<init>
+  99  0.36% 75.00%       1 300254 java.io.UnixFileSystem.getBooleanAttributes0
+ 100  0.36% 75.36%       1 300255 java.lang.Throwable.fillInStackTrace
+ 101  0.36% 75.72%       1 300256 clojure.java.io__init.load
+ 102  0.36% 76.09%       1 300260 java.util.zip.ZipFile.freeEntry
+ 103  0.36% 76.45%       1 300267 java.net.URL.<init>
+ 104  0.36% 76.81%       1 300275 java.lang.Thread.currentThread
+ 105  0.36% 77.17%       1 300276 clojure.lang.PersistentHashMap.assoc
+ 106  0.36% 77.54%       1 300277 java.net.URLClassLoader.findClass
+ 107  0.36% 77.90%       1 300278 sun.misc.Unsafe.compareAndSwapObject
+ 108  0.36% 78.26%       1 300279 name.stadig.deque.protocol$fn__81.invoke
+ 109  0.36% 78.62%       1 300280 java.lang.Object.getClass
+ 110  0.36% 78.99%       1 300281 java.lang.Object.getClass
+ 111  0.36% 79.35%       1 300282 clojure.lang.RT.object_array
+ 112  0.36% 79.71%       1 300284 java.lang.Object.getClass
+ 113  0.36% 80.07%       1 300285 java.lang.Object.getClass
+ 114  0.36% 80.43%       1 300286 clojure.lang.RT.object_array
+ 115  0.36% 80.80%       1 300287 clojure.lang.ChunkBuffer.add
+ 116  0.36% 81.16%       1 300291 java.lang.System.arraycopy
+ 117  0.36% 81.52%       1 300292 name.stadig.deque$two_buffer_case.invoke
+ 118  0.36% 81.88%       1 300293 name.stadig.deque$red_QMARK_.invoke
+ 119  0.36% 82.25%       1 300294 name.stadig.deque$set_prefix.invoke
+ 120  0.36% 82.61%       1 300295 clojure.lang.ArrayChunk.reduce
+ 121  0.36% 82.97%       1 300297 name.stadig.deque$set_prefix.invoke
+ 122  0.36% 83.33%       1 300298 name.stadig.deque$two_buffer_case.invoke
+ 123  0.36% 83.70%       1 300299 name.stadig.deque$set_prefix.invoke
+ 124  0.36% 84.06%       1 300300 name.stadig.deque$two_buffer_case.invoke
+ 125  0.36% 84.42%       1 300301 name.stadig.deque$two_buffer_case.invoke
+ 126  0.36% 84.78%       1 300304 name.stadig.deque$two_buffer_case.invoke
+ 127  0.36% 85.14%       1 300305 name.stadig.deque$two_buffer_case.invoke
+ 128  0.36% 85.51%       1 300306 name.stadig.deque$two_buffer_case.invoke
+ 129  0.36% 85.87%       1 300307 name.stadig.deque$two_buffer_case.invoke
+ 130  0.36% 86.23%       1 300308 name.stadig.deque$two_buffer_case.invoke
+ 131  0.36% 86.59%       1 300309 name.stadig.deque$two_buffer_case.invoke
+ 132  0.36% 86.96%       1 300310 name.stadig.deque$two_buffer_case.invoke
+ 133  0.36% 87.32%       1 300311 name.stadig.deque$two_buffer_case.invoke
+ 134  0.36% 87.68%       1 300312 clojure.lang.ChunkedCons.chunkedMore
+ 135  0.36% 88.04%       1 300314 name.stadig.deque$set_prefix.invoke
+ 136  0.36% 88.41%       1 300321 clojure.core.protocols$fn__5890.invoke
+ 137  0.36% 88.77%       1 300322 clojure.core.protocols$fn__5890.invoke
+ 138  0.36% 89.13%       1 300327 clojure.lang.Numbers$LongOps.isPos
+ 139  0.36% 89.49%       1 300328 name.stadig.deque$two_buffer_case.invoke
+ 140  0.36% 89.86%       1 300331 name.stadig.deque$array_slice.invoke
+ 141  0.36% 90.22%       1 300332 clojure.core.protocols$fn__5890.invoke
+ 142  0.36% 90.58%       1 300333 name.stadig.deque$persistent_deque.invoke
+ 143  0.36% 90.94%       1 300334 clojure.core.protocols$fn__5890.invoke
+ 144  0.36% 91.30%       1 300336 name.stadig.deque$array_slice.invoke
+ 145  0.36% 91.67%       1 300338 name.stadig.deque$red_QMARK_.invoke
+ 146  0.36% 92.03%       1 300340 clojure.lang.Util.hash
+ 147  0.36% 92.39%       1 300341 name.stadig.deque$array_slice.invoke
+ 148  0.36% 92.75%       1 300342 name.stadig.deque$persistent_deque.invoke
+ 149  0.36% 93.12%       1 300343 clojure.lang.Util.hash
+ 150  0.36% 93.48%       1 300344 name.stadig.deque$two_buffer_case.invoke
+ 151  0.36% 93.84%       1 300345 name.stadig.deque$array_slice.invoke
+ 152  0.36% 94.20%       1 300346 name.stadig.deque.PersistentDeque.cons
+ 153  0.36% 94.57%       1 300349 clojure.lang.RT.object_array
+ 154  0.36% 94.93%       1 300350 name.stadig.deque$regularize.invoke
+ 155  0.36% 95.29%       1 300353 clojure.core$chunk_cons.invoke
+ 156  0.36% 95.65%       1 300354 clojure.lang.Util.hash
+ 157  0.36% 96.01%       1 300355 clojure.lang.LazilyPersistentVector.createOwning
+ 158  0.36% 96.38%       1 300357 clojure.core$seq.invoke
+ 159  0.36% 96.74%       1 300358 clojure.lang.Util.hash
+ 160  0.36% 97.10%       1 300359 clojure.lang.LazilyPersistentVector.createOwning
+ 161  0.36% 97.46%       1 300360 name.stadig.deque$persistent_deque.invoke
+ 162  0.36% 97.83%       1 300361 name.stadig.deque$persistent_deque.invoke
+ 163  0.36% 98.19%       1 300362 name.stadig.deque$two_buffer_case.invoke
+ 164  0.36% 98.55%       1 300363 clojure.lang.Util.hash
+ 165  0.36% 98.91%       1 300364 java.lang.Long.valueOf
+ 166  0.36% 99.28%       1 300365 clojure.lang.RT.object_array
+ 167  0.36% 99.64%       1 300366 name.stadig.deque$persistent_deque.invoke
+ 168  0.36% 100.00%       1 300367 clojure.lang.LazilyPersistentVector.createOwning
 CPU SAMPLES END
